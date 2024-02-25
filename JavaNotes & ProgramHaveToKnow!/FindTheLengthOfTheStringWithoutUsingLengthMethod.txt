@@ -1,0 +1,13 @@
+Find the length Of The String without Using Length method
+-******************************************************---
+
+String name="gani";
+
+System.out.println(name.length());// {  Normal Defult method find the length }
+
+char[] array=name.toCharArray();
+int length=0;
+for(Character c:array){
+length++;
+}
+System.out.println(length);

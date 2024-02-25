@@ -1,0 +1,46 @@
+Remove leading and Trailing White space
+----------------------------------------
+
+
+Str="Hello Agni!!";
+
+1.using trim()
+
+2.using Strip (java11)
+			1.strip()
+			2.stripLeading()
+			3.stripTrailing()
+3.using regex
+
+		1. ^[ \t]+|[ \t]+$  ---> leading and trailing
+		2. ^[\t]+ -> leading
+		3.[\t]+$ ->trailing
+
+
+---------------------------------------------------------------------------------
+
+Removing leading and Trailing in white space
+***********************************************
+String input=" The world is mine ";
+
+//1 method
+System.out.println(input.trim());
+
+//2 method apllicable in java11 above version only 
+System.out.println(input.strip());
+System.out.println(input.stripLeading());
+System.out.println(input.stripTrailing());
+
+//3 method 
+String replace=input.replaceAll("^[ \t]+|[ \t]$","");
+System.out.println(replace);
+
+System.out.println(input.replaceAll("^[ \t]",""));
+
+System.out.println(input.replaceAll("[ \t]$",""));
+
+
+
+
+
+

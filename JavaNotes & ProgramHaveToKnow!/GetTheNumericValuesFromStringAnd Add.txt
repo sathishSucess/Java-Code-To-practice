@@ -1,0 +1,45 @@
+Get the numeric values from string  and Add 
+===============================================
+input = "AgniPrasanth92";
+output=1+2=3;
+
+
+Steps
+======
+
+1. Assume the  total of the digits=0
+2. Take the length of the String and iterate
+3. Inside the loop, fetch each char value and store 
+4. check if that char is a digit  or not, using  is a digit()
+5. if it 	 is a digit, get  the numeric value and  add it to
+
+			total=total+numericValue; 
+------------------------------------------------------------------------------------------
+
+String input="Deva25turns7";
+
+int total=0;
+
+char[] charArray=input.toCharArray();
+for(int i=0;i<input.length();i++){
+if(Character.isDigit(charArray[i])){
+total=total+Character.getNumericValue(charArray[i]);
+
+
+
+}
+
+
+}
+System.out.println(total);
+
+
+
+
+
+
+
+
+
+
+

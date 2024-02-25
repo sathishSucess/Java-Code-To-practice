@@ -1,0 +1,130 @@
+ 
+Swap number:
+=============
+Note:
+=====
+swap TWO NUMBER
+
+yourSalary= 2000;
+yourSuperiorSalary=50000
+
+you want to somehow,swap his  salary to yours
+
+how can  we do ?
+let your salary be  yours  = 20
+your superior be his= 50
+
+you give yours third person.called temp.
+
+
+so, temp=yours
+	 yours=his
+	 his=temp
+
+but simple  logic.people 	will asd to u write without third variable
+
+we can make use of mathematics.
+Dont worry.simple arthamatic
+operation like add,sub ,multilply and divide
+
+   formula: first, second   (*using addtion and subration*)
+===========================
+first=frist-second
+second=frist+second
+frist=second-frist
+
+	formula: first, second (*using multiplication and division)
+==========================
+		first=first*second
+		second=frist/second
+		frist=frist/second
+
+
+==========================================*****************======Practice==========*********************=============
+
+
+
+/// with third party swapping 
+=================================
+
+package com.swap;
+
+	public class Swap{
+		public static void main(String[]args){
+		
+			int mySalary=459;
+			int superior=3444;
+			int temp;
+
+			temp=mySalary;
+			mySalary=superior;
+			superior=temp;
+System.out.println("MySalary:"+mySalary+"super:"+superior);
+
+
+ }
+
+}
+
+===========================******************--===============================
+// using Addtion and subration swap the number
+==============================================
+
+package com.swap
+
+public class Swap{
+
+public static void main(String[]args){
+
+			
+	int first=30; int second=45;
+	System.out.println("Before Swap Frist value: "+first+"Second value: "+second);
+	
+	first=first-second;
+	second=first+second;
+	first=second-first;
+						System.out.println("After Swap Frist value: "+first+"Second value: "+second);
+																																			
+
+}
+
+}
+
+===============================================================================================
+package com.swap
+
+public class Swap{
+
+public static void main(String[]args){
+
+int first=456; int second=788;
+
+System.out.println("Before swap First value: "+first+" Second value: "+second); 
+first=first*second;
+second=first/second;
+first=first/second;
+System.out.println("After swap Second value: "+first+" second value: "+second);
+
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

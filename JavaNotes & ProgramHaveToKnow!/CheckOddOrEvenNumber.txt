@@ -1,0 +1,11 @@
+=>To check the ODD OR EVEN number ,we are using scanner class for user input.
+
+Scanner scanner=new Scanner(System.in);
+int input= scanner.nextInt();
+
+if(input%2==0){
+System.out.println("it is even number");
+}else{
+System.out.println("it is odd number");
+}
+-----------------------------------------------------------------------------------

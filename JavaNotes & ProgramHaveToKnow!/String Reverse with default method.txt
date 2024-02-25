@@ -1,0 +1,186 @@
+package com.reve;
+
+public class ReverseString{
+
+public static void main (String[]args){
+
+String name="bala";
+StringBuffer buffer=new StringBuffer();
+buffer.append(name);
+System.out.println(buffer.reverse());
+
+
+ }
+} 
+====================================================
+package com.rever;
+
+public class Reverse{
+
+public static void main(String[]args{
+
+String name="delhi";
+
+StringBuilder builder=new StringBuilder();
+builder.append(name); 
+System.out.println(builder.reverse());
+
+Output:ihled
+}
+
+}
+
+===================================****================================================	
+
+package com.reves;
+
+public class Reves{
+
+public static void main(String[]args){
+
+String name="marphin";
+
+String reves="";
+
+for(int i=name.length()-1;i>=0;i--){
+char[] charArray=name.toCharArray();
+revs =revs+charArray[i];
+}
+System.out.println(revs);
+
+ }
+
+}
+==================================*******==Practice===- Note=====*******==========================================
+package com.revs
+
+public class ReverseString{
+
+public static void main(String[]args){
+
+String name = "fatel";
+
+StringBuffer buffer=new StringBuffer();
+buffer.append(name);
+
+System.out.println(buffer.reverse());
+
+ }
+}
+==============================================------------------================================
+
+package com.revs;
+ public class Reverse{
+  public static void main(String[]args){
+	
+	String name="Gail";
+		
+	StringBuilder builder=new StringBuilder();
+	builder.append(name);
+		System.out.println(builder.reverse());
+
+}
+
+}
+================================================------------=======================================
+// reverse String in custom for loop;( toCharArray() )<----method
+
+package com.revs;
+	public class Reverse{
+ 		public static void main(String[]args){
+
+		String name="Bengal";
+		String revs="";
+	
+	for(int i=name.length()-1;i>=0;i--){
+			char[] charArray=name.toCharArray();
+				revs =revs+charArray[i];
+
+  }
+		System.out.println(revs);
+ }
+
+}
+========================================================*******************===========================
+// reverse String in custom for loop;( charAt() )<----method
+
+package com.rev;
+
+	public class Revese{
+public static void main(String[]args){
+	String name="helaa";
+	String rev= "";
+	
+	for(int i=name.length()-1;i>=0;i--){
+	rev=rev+name.charAt(i);
+  }
+	System.out.println(rev);
+ }
+}
+==============================================********************==========================		
+
+package com.rev;
+
+	public class Reverse{
+	public static void main(String[]args){
+	
+	String name ="hanaa";
+	char[]array=name.toCharArray();
+
+	List<Character> list=new ArrayList<Character>();
+	
+	for(Character newChar:array){
+	list.add(newChar);
+
+}
+Collections.reverse(list);
+
+ListIterator<Character> iterator=list.listIterator();
+while(iterator.hasNext()){
+System.out.println(iterator.next());
+}
+
+}
+=============================================================********************==========================
+// Reverse String using Collection 
+
+
+package com.revs;
+
+	public class Reverse{
+
+  public static void main (String[]args){
+	     
+		String name="DamSatan";
+		char[] array=name.toCharArray();
+		List<Character> list=new ArrayList<>();
+		for(Character newChar:array){
+			list.add(newChar);
+     }
+	Collections.reverse(list);
+	ListIterator<Character> iterator=list.listIterator();
+	while(iterator.hasNext()){
+	System.out.println(iterator.next());
+    }
+
+  }
+
+}
+
+============================================================================***********
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+Find the Smallest number
+--------------------------
+int array[]={5,6,45,2,1,9};
+ int smallest =Integer.MAX_VALUE;
+for(int i=0;i<array.length;i++){
+	while(array[i]<smallest){
+smallest=array[i];
+
+
+}
+}
+System.out.println(smallest);
+}
+
+second method find smallest number
+-----------------------------------
+Arrays.sort(array);
+System.out.println(array[0]);
+
+third method using collection
+***----------------------****
+
+List<Integer>list=Arrays.asList(array);
+Collections.sort(list);
+int smallest=list.get(0);
+System.out.println(smallest);
+
+
+---------------------------------
+array[]={56,8,456,078,6};
+
+int smallest =Integer.MAX_VALUE;
+for(int i=0; i<array.length;i++){
+while(array[i]<smallest){
+smallest=array[i];
+
+
+}
+
+}
+System.out.println(smallest);
+
+
+

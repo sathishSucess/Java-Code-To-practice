@@ -1,0 +1,10 @@
+  Increase current Date by 10
+*********************************      
+			
+			String input="2022-20-28";
+			SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+			Calendar instance = Calendar.getInstance();
+			instance.setTime(sdf.parse(input));
+			instance.add(Calendar.DATE,2);
+			String format = sdf.format(instance.getTime());
+			System.out.println(format);

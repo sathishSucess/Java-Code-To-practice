@@ -1,0 +1,25 @@
+Whenever we reverse the particular string or number, if remains the same is known as palindrome
+
+
+like, 1.'Madam' if we reverse it remains "madaM';
+      2.'12421' if we reverse it remains '12421';
+			
+	 
+
+Paliandrom
+**********
+
+String input="malayalam";
+String revs="";
+
+for(int i=input.length()-1;i>=0;i--){
+revs=revs+input.charAt(i);
+
+}
+if(revs.equals(input){
+System.out.println("It is a pailndrom");
+
+}else{
+System.out.println("it is not a pailndrom");
+
+}

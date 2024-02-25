@@ -1,0 +1,32 @@
+Print Triangle
+***************
+
+int numberLine;
+int row,coloum=0;
+Scanner scanner=new Scanner(System.in);
+numberLine=scanner.nextInt();
+for(row=0;row<=numberLine;row++){
+for(coloum=0;coloum<=row;coloum++){
+System.out.print("*");
+}
+System.out.println();
+}
+=================///////2nd Method/////////===============
+int startingValue=1;
+int row,coloum=0;
+int limit;
+
+Scanner scanner=new Scanner(System.in);
+limit=scanner.nextInt();
+
+for(row=0;row<=limit;row++){
+for(coloum=0;coloum<=row;coloum++){
+
+System.out.print(startingValue+"");
+startingValue=startingValue+1;
+}
+System.out.println();
+}
+
+
+

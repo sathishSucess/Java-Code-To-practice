@@ -1,0 +1,17 @@
+Increase Current month by 3
+***************************
+
+package com.sample;
+public class IncreaseCurrent{
+public static void main(String[] args){
+
+String input="2002-05-12";
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.MONTH,3);
+System.out.println(sdf.format(instance.getTime()));
+
+}
+
+}

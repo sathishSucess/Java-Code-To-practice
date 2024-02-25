@@ -1,0 +1,4594 @@
+Reverse string
+=================
+ String name="Deva";
+ String revs=" ";
+
+	char[] array=name.toCharArray();
+	for(int i=name.length()-1;i>=0;i--){
+  			revs=revs+array[i];
+	
+
+  }
+
+
+System.out.println(revs);
+===========================================
+String name="Bala";
+String revs="";
+
+for (int i=name.length()-1;i>=0;i--){
+		revs=revs+name.charAt(i);
+
+}
+System.out.println(revs);
+===============================================
+
+String name="bati";
+
+StringBuffer buffer=new StringBuffer();
+buffer.append(name);
+System.out.println(buffer.reverse());
+
+==============================================
+
+String name="Deva";
+StringBuilder builder=new StringBuilder();
+builder.append(name);
+System.out.println(builder.reverse());
+
+=============================================
+
+************
+Swap number
+*************
+{WITHOUT Third Variable} using Addtion and Subraction.
+
+int frist=456;
+int second=88;
+
+frist=frist-second;
+second=frist+second;
+frist=second-frist;
+
+System.out.println("After Swap Frist value: "+frist+" SecondValue: "+second);
+
+=========////2nd/////=====================
+{WITHOUT Third Variable} using Multiplication and division.
+
+int frist=454;
+int second=5665;
+System.out.println("Before Swap Frist value: "+frist+" SecondValue: "+second);
+
+frist=frist*second;
+second=frist/second;
+frist=frist/second;
+
+System.out.println("After Swap Frist value: "+frist+" SecondValue: "+second);
+
+==========/////3rd/////////======================
+
+{With Third Variable}
+
+int frist=787;
+int second=455;
+int temp;
+System.out.println("Before Swap Frist value: "+frist+" SecondValue: "+second);
+
+temp=frist;
+frist=second;
+second=temp;
+System.out.println("After Swap Frist value: "+frist+" SecondValue: "+second);
+
+==========================================================================
+**************
+Reverse number
+**************
+int given=325;
+int reversed=0;
+
+while(given!=0){
+
+reversed=reversed*10;
+reversed=reversed+given%10;
+given=given/10;
+
+}
+System.out.println(reversed);
+===================//2nd method///=======================
+ 
+{using Scanner reverse a number}
+
+int given=0;
+int reverse=0;
+Scanner scanner=new Scanner(System.in);
+System.out.println("Enter ur number");
+given=scanner.nextInt();
+
+while(given!=0){
+reverse=reverse*10;
+reverse=reverse+given%10;
+given=given/10;
+}
+System.out.println(rever se);
+===========================================
+
+*********************
+ print triangle "*" 
+**********************
+int row,coloum=0;
+int numberOfLines;
+
+Scanner scanner=new Scanner(System.in);
+System.out.println("Enter ur number; ");
+numberOfLines=scanner.nextInt();
+
+for(int row=0;row<=numberOfLines;row++){
+for(int coloum=0;coloum<=row;coloum++){
+			System.out.print(" * ");
+
+}
+System.out.println();
+
+}
+==========================//////2nd method////////===========
+
+int Startingvalue=1;
+int row,coloum;
+int limit;
+
+Scanner Scanner=new Scanner(System.in);
+System.out.println(Enter ur Desire value);
+limit=scanner.nextInt();
+
+for(row=0;row<=limt;row++){
+for(coloum=0;coloum<=row;coloum++){
+System.out.print(Startingvalue+" ");
+Startingvalue=Startingvalue+1;
+}
+System.out.println();
+}
+
+
+===============================================================
+
+Second round of practice
+****---------------*****
+
+
+Reverse String { first method }
+--------------------------------
+String name="Dali";
+StringBuffer buffer=new StringBuffer();
+buffer.append(name);
+System.out.println(buffer.reverse());
+
+{ Second method }
+------------------
+String name="fali";
+StringBuilder builder=new StringBuilder();
+builder.append(name);
+System.out.println(builder.reverse());
+
+{ third method  Reverse }
+-----------------
+String name="hali";
+String revs="";
+char[] array=name.toCharArray();
+
+for(int i=name.length()-1;i>=0;i--){
+		revs=revs+array[i];
+}
+       System.out.println(revs);  
+
+{ Fourth method }
+--------------------
+String name="gali";
+String revs="";
+
+for(int i=name.length()-1;i>=0;i--){
+revs=revs+name.charAt(i);
+}                       
+
+System.out.println(revs);
+
+{ fiveth method }
+-----------------
+String name="hallo";
+char[] array=name.toCharArray();
+
+List<Character> list=new Array<>();
+for(Character character:array){
+list.add(character);
+}
+Collections.reverse(list);
+
+
+Iterator iterator=list.iterator();
+while(iterator.hasNext()){
+System.out.print(iterator.next());
+
+}
+
+
+
+
+
+-----------------------****************************-----------------
+
+Swap the number; { with third variable }
+****+###################################+++*****
+
+int first=456;
+int second=45566;
+int temp;
+System.out.println("Before Swap Frist value: "+first+" SecondValue: "+second);
+
+temp=first;
+first=second;
+second=temp;
+
+System.out.println( first+"+second);
+
+{ second method without using third variable } addtion and subration
+*------------------------------------------*
+int frist =767;
+int second =456;
+
+frist=frist-second;
+second=frist+second;
+frist=second-frist;
+
+System.out.println(frist+""+second );
+
+
+********************************************
+Swap number using without third variable ( mulitiplclation and division)
+
+int frist=899;
+int second=789;
+
+frist=frist*second;
+second=frist/second;
+frist=frist/second;
+System.out.println(frist+"     "+second );
+
+
+
+
+
+
+
+
+
+----------------------------------------------------
+
+reverse number
+**************
+
+int given; 
+int reverse;
+
+
+Scanner scanner=new Scanner(System.in);
+given=scanner.nextInt();
+
+while(given!=0){
+reverse=reverse*10;
+reverse=reverse+given%10;
+given=given/10;
+}
+System.out.println(reverse);
+
+********************************************************
+
+Print A triangle using star ( * )
+-----------------/--------------------
+
+int row,coloum=0;
+int numberlines=4;
+
+for (row=0;row<=numberlines;row++){
+ for (coloum=0;coloum<=row;coloum++){
+System.out.print(" * ");
+
+}
+System.out.println();
+
+
+
+}
+
+Second method print triangle
+-----------------------------
+
+int row,coloum=0;
+int numberLines=1;
+int limits=4;
+
+for(row=0;row<=limits;row++){
+	for(coloum=0;coloum<=row;coloum;){
+	System.out.print(numberlines+"");
+	numberLines=numberLines+1;
+}
+System.out.println();
+
+}
+==============================================
+
+Find the length of the String without using defualt value 
+
+	String name="gali";
+
+System.out.println(name.length());
+
+char[] array=name.toCharArray();
+int length=0;
+for(Character newChara:array){
+
+length++;
+}
+System.out.println(length);
+====================================================
+find the smallest number
+-------------------------
+
+int array[]={1,2,55,8,9,2};
+
+int smallest=Integer.MAX_VALUE;
+
+for(int i=0; i<array.length; i++){
+if (array[i]<smallest){
+   smallest=array[i];
+	
+}
+}
+
+System.out.println(smallest);
+
+-----------------*********--------------------------
+second method
+****************
+
+Arrays.sort(array);
+System.out.println(array[0]);
+
+-----------------------------
+third method
+*************
+
+List<Integer> list=Arrays.asList(array);
+Collections.sort(list);
+
+int smallest = list.get(0);
+System.out.println(smallest);
+==========================================
+
+Reverse the Sentence of String
+*******************************
+
+String name="Super sangi comp";
+String reverse="";
+
+String[] temp=name.split(" ");
+for(int i=temp.length-1;i>=0;i--){
+	reverse=reverse+temp[i];
+
+}
+
+System.out.println(reverse);
+
+}
+
+-----------------------------------------------
+
+find the element Array
+---****************---
+int array[]={1,2,54,87,45,6};
+int numberToFind=3;
+boolean found=false;
+
+for(int number:array){
+if(number==numberToFind){
+found=true;
+break;
+}
+
+}
+if(found){
+System.out.println("Number is present");
+}else{
+System.out.println("Number is not Avaliable");
+}
+
+
+--------------------------------------------------------
+Reverse Sentence of String
+******************************
+
+String name="the World Full";
+String revs="";
+
+String temp=name.split();
+
+for(int i=temp.length-1;i>=0;i--){
+revs=revs+temp[i]+" ";
+
+
+
+}
+System.out.println(revs);
+---------------------------------------
+
+reverse Sentence in String
+****************************
+String name=" The World is My destenion";
+
+String revs=" ";
+
+String[] temp=name.split(" ");
+
+for(int i=temp.length-1;i>=0;i--){
+revs=revs+temp[i];
+
+}
+System.out.println(revs);
+
+
+------------------------------------
+reverse string in the Sentence
+******************************
+
+String name="My Computer MY game";
+String revs="";
+String[] temp=name.split(" ");
+for(int i=temp.length-1;i>=0;i--){
+revs=revs+temp[i]+" ";
+
+
+}
+Systerm.out.println(revs);
+
+-------------------------------------
+
+Find the element in array
+**************************
+
+int array[]={1,2,3,8,75,7,8};
+
+ int toFindNumber;
+ bollean found=false;
+
+Scanner scanner=new Scanner(System.in);
+toFindNumber=scanner.nextInt();
+
+for(int number:array){
+if(number==toFindNumber){
+found=true;
+break;
+
+}
+
+}
+if(found){
+System.out.println("Number is Present");
+}else{
+System.out.println("Number is not present");
+}
+------------------------------------------------
+
+How to find the position of the alphabet
+*******************************************
+
+Scanner scanner=new Scanner(System.in);
+char givenChar=scanner.next().charAt(0);
+
+givenChar=Character.toLowerCase(givenChar);
+int asciiValue=(int)givenChar;
+int position=asciiValue-96;
+Syatem.out.println(position);
+----------------------------------------
+
+Scanner scanner=new Scanner(System.in);
+
+char givenChar=scanner.next().charAt(0);
+givemChar=Character.toLowerCase(givenChar);
+int asciiValue=(int)givenChar;
+
+int position=ascii-96;
+System.out.println(position);
+
+=================================================
+
+how to find the position of the alpahabet
+******************************************
+Scanner scanner=new Scanner(System.in);
+givenChar=scanner.next().charAt(0);
+givenChar=Character.toUpperCase(givenChar);
+int ascii=(int)givenChar;
+System.out.println(ascii);
+
+int position=ascii-64;
+
+System.out.println(position);====
+=================-----------------------------------------
+
+how to find occurence character in a string
+********************************************
+
+String input="ArulPrasath";
+char toFind='a';
+int occurence=0;
+input =input.toLowerCase();
+for(int=0;i<input.length();i++){
+if(input.charAt(i)==toFind){
+occurence++;
+}
+}
+System.out.println(toFind+" is found"+occurence+" number times");
+
+-----------------------------------------------------------------------
+How to find the occurence
+***************************
+
+String input="arulparathi";
+char toFind='a';
+
+input=input.toUpperCase();
+String charToFind=Character.toString(toFind).toUpperCase();
+int actualLength=input.length();
+System.out.println(actualLength);
+
+
+input=input.replace(charToFind,"");
+
+int lengthAfterReplacement=input.length();
+System.out.println(actualLength-lengthAfterReplacement);
+
+
+----------------------------------------------------------
+
+find the position of the alphabet
+------------------------------------
+
+Scanner scanner=new Scanner(System.in);
+charToFind=scanner.next().charAt(0);
+
+charToFind=Character.toLowerCase(charToFind);
+
+int asciiValue=(int)charToFind;
+int position=asciiValue-96;
+System.out.println(position);
+
+*********************************************
+
+Find the position of the Alpahabet
+----------------------------------
+
+Scanner scanner=new Scanner(System.in);
+char givenChar= scanner.next().charAt(0);
+
+givenChar=Character.toUpperCase(givenChar);
+int ascii=(int)givenChar;
+int position=ascii-64;
+System.out.println(position)
+
+==================================================
+
+find the occurence of the character in a string
+************************************************
+Using Iteration
+****************
+String name="ArulmathiVarnachais";
+char toFind='a';
+int occurence=0;
+
+name=name.toLowerCase();
+
+for(int i=0;i<name.length();i++){
+if(name.charAt(i)==toFind){
+occurence++;
+
+}
+
+}
+System.out.println(toFind+" occurence is: "+occurence);
+
+
+Without iteration find the occurence of the String Character
+--------------------------------------------------------------
+
+String input="DelhiParasSentgel";
+char toFind='s';
+
+input=input.toUpperCase();
+String charToFind=Character.toString(toFind).toUpperCase();
+
+
+int actualLength=input.length();
+
+
+input=input.replace(charToFind,"");
+
+int afterReplacingLength=input.length();
+
+System.out.println(actualLength-afterReplacingLength);
+--------------------------------------------------------------------------
+How to String Reverse 
+-**********************
+String name="Delhi";
+String revs="";
+char[]charArray=name.toCharArray();
+for(int i=name.length()-1;i>=0;i--){
+revs=revs+charArray[i];
+
+}
+System.out.println(revs);
+
+=============================================
+reverse String using predefined method
+-------------------------------------------
+String name="Fanda";
+
+StringBuffer buffer=new StringBuffer();
+buffer.append(name);
+
+System.out.println(buffer.reverse());
+---------------------------------------------
+-Revese the string predefined method
+*****************************************
+String input="Samni";
+StringBuilder builder=new StringBuilder();
+builder.append(input);
+System.out.println(builder.reverse);
+
+******************----------------------------//////////////---------------
+reverse String using user defined methodd
+--------------------------------------------
+
+String name="Delhi dhaba";
+String revs="";
+
+char[]charArray=name.toCharArray();
+for(int i=name.length()-1;i>=0;i--){
+revs=revs+charArray[i];
+}
+System.out.println(revs);
+
+---------------------------***********************-------------------------------
+reverse string using user defined method (charAt)
+*******************************************************
+String name="Delii";
+String rev="";
+
+for(int i=name.length()-1;i>=0;i--){
+rev=rev+name.charAt(i);
+
+}
+System.out.println(rev);
+------------------------------------------------------------------------
+revese String using defined method
+***********************************
+String name="renaa";
+String rev="";
+
+for(int i=name.length()-1;i>=0;i--){
+rev=rev+name.charAt(i);
+
+}
+System.out.println(rev);
+============================****using Collections (list iterator) revese string************==========================================
+String name="Samba";
+
+List<Character> list=new ArrayList<>();
+for(Character newChar:name){
+
+list.add(newChar);
+
+}
+Collections.reverse(list);
+
+Iterator iterator=list.listIterator();
+
+while(iterator.hasNext()){
+System.out.println(iterator.next());
+
+}
+********************************-----------------------------------------------------****************
+Reverse String using collection iterator
+--------------------------------------------------
+
+String name= "Sambba";
+char[] charArray=name.toCharArray();
+
+List<Character> list=new ArrayList<>();
+for(Character newChar:charArray){
+list.add(newChar);
+
+}
+Collections.reverse(list);
+
+Iterator iterator=list.iterator();
+
+While(iterator.hasNext()){
+System.out.println(iterator.next());
+}
+====================================================================================
+
+String name="dencver";
+
+char[] charArray=name.toCharArray();
+
+List<Character> list=new ArrayList<>();
+for(Character newChara:charArray){
+list.add(newChar);
+}
+
+ListIterator iterator=list.listIterator();
+
+While(iterator.hasPrevious){
+System.out.println(iterator.previous());
+}
+
+======================================================================================
+Swap two number or String
+==========================
+with third variable
+=====***********=====
+ 
+int first=789;
+int second=7788;
+int temp;
+System.out.println("BeforeSwap "+first+" "+second);
+
+temp=first;
+first=second;
+second=temp;
+
+System.out.println("AfterSwap "+first+" "+second);
+
+----------------------------------------
+
+swap number Without using third variable(addtion and subraction)s
+***********************************************************************
+int first=999;
+int second=4544;
+System.out.println("BeforeSwap "+first+" "+second);
+
+first=first-second;
+second=first+second;
+first=second-first;
+
+System.out.println("AfterSwap "+first+" "+second);
+
+-----------------------------------------------------------------------
+Swap number Without thirdd variable(multiplication and division)
+******************************************************************
+int first=457;
+int second=77;
+System.out.println("BeforeSwap "+first+" "+second);
+
+first=first*second;
+second=first/second;
+first=first/second;
+System.out.println("AfterSwap "+first+" "+second);
+
+--------------------------------------------------------------------------
+Reverse number
+==================
+
+int given=787;
+int revs=0;
+
+
+if(given!=0){
+
+revs=revs*10;
+revs=revs+given%10;
+given=given/10;
+
+
+}
+System.out.println(revs);
+
+-----------------------------------------------------
+
+print triangle
+------------------
+
+int row,coloum=0;
+int numberLines=4;
+
+for(row=0;row<=numberOfLines;row++){
+	for(coloum=0;coloum<=row;coloum++){
+	System.out.print("*");
+
+}
+}
+System.out.println();
+-
+------------------------------------------------------
+int row,coloum=0;
+int numberOfLines;
+Scanner scanner=new Scanner(System.in);
+numberOfLines=scanner.nextInt();
+for(row=0;row<numberOfLines;row++){
+for(coloum=0;coloum<row;coloum++){
+System.out.print("*");
+}
+System.out.println();
+}
+========================================================
+Reverse String 
+--------------
+String name="Del babu";
+StringBuilder builder=new StringBuilder();
+builder.append(name);
+System.out.println(builder.reverse());
+=============================================
+reverseString
+*************
+
+String input="Ferlda";
+StringBuffer buffer=new StringBuffer();
+buffer.append(input);
+System.out.println(buffer.reverse());
+---------------------------------------------
+
+reverse String {toCharArray }
+----------------
+String input="Delibabu";
+String revs="";
+
+char[]charArray=input.toCharArray();
+for(int i=input.length()-1;i>=0;i--){
+revs=revs+charArray[i];
+
+}
+System.out.println(revs);
+----------------------------------------------------
+Reverse String using charAt
+******************************
+
+String name="Delfi";
+String revs="";
+
+for(int i=name.length()-1;i>=0;i--){
+revs=revs+name.charAt(i);
+
+}
+System.out.println(revs);
+
+======================================================
+Swap number 	with third variable
+**********************************
+int first=7889;
+int second=4565;
+int temp;
+System.out.println("Before swap:"+first+" "+second);
+  temp=first;
+	first=second;
+	second=temp;
+System.out.println("After swap:"+first+"<==>"+second);
+----------------------------------------------------------
+Swap number Without third vaeiable
+-********************************-
+								{using addtion and subraction}
+int first=745;
+int second=963;
+System.out.println("Before swap:"+first+" "+second);
+
+first=first-second;
+second=first+second;
+first=second-first;
+System.out.println("After swap:"+first+"<==>"+second);
+
+--------------------------------------------------------------
+Swap number using third variable
+***********************************
+								{using multiplication and division}
+
+int first=213;
+int second=894;
+System.out.println("Before swap:"+first+" "+second);
+
+first=first*second;
+second=first/second;
+first=first/second;
+System.out.println("After swap:"+first+"<==>"+second);
+====================================================================
+
+reverse number
+***************
+int given=7856;
+int revs=0;
+
+
+while(given!=0){
+revs=revs*10;
+revs=revs+given%10;
+given=given/10;
+
+}
+System.out.println(revs);
+
+========================================================================
+Reverse number
+--------------
+int given=145632;
+int revs;
+while(given!=0){
+revs=revs*10;
+revs=revs+given%10;
+given=given/10;
+
+}
+System.out.println(revs);
+=========================================================================
+
+print triangle
+--------------
+int row,coloum=0;
+int numberLines=4;
+
+for(row=0;row<=numberLines;row++){
+for(coloum=0;coloum<=row;coloum++){
+System.out.print("*");
+
+}
+System.out.println();
+}
+
+========================================================================
+print triangel
+-----------------
+
+int row,coloum=0;
+int numberLines;
+Scanner scanner=new Scanner(System.in);
+numberLines=scanner.nextInt();
+for(row=0;row<=numberLines;row++){
+for(coloum=0;coloum<=row;coloum++){
+System.out.print("*");
+}
+System.out.println();
+}
+=========================================================================
+
+print triangle 
+------------------
+int row,coloum=0;
+int startingValue=1;
+int limit;
+Scanner scanner=new Scanner(System.in);
+limit=scanner.nextInt();
+
+for(row=0;row<=limit;row++){
+for(coloum=0;coloum<=row;coloum++){
+System.out.print(startingValue+" ");
+startingValue=startingValue+1;
+}
+System.out.println();
+}
+======================================================================
+print triangle
+--------------
+int row,coloum=0;
+int numberOfLines;
+Scanner scanner=new Scanner(System.in);
+numberOfLines=scanner.nextInt();
+for(row=0;row<=numberOfLines;row++){
+for(coloum=0;coloum<=row;coloum++){
+System.out.print("*");
+}
+System.out.println();
+}
+=============================================================================
+
+Find the length of the String without using predefined length method
+*********************************************************************
+String name="falaier";
+
+System.out.println(name.length());
+
+char[] charArray=name.toCharArray();
+int length=0;
+for(Character newChar:charArray){
+length++;
+
+}
+System.out.println(length);
+------------------------------------------------------------------------------------
+Find the smallest number in array
+**********************************
+
+int array[]={20,10,30,50,5,56};
+int smallest=Integer.MAX_VALUE;
+for(int i=0;i<array.length;i++){
+while(array[i]<samllest){
+smallest=array[i];
+}
+
+}
+System.out.println(smallest);
+=====================================
+find smallest number in array second method
+********************************************
+int array[]={54,5,54,78,99,8,9};
+Arrays.sort(array);
+System.out.println(array[0]);
+
+================================================
+Find the smallest number of Array
+**********************************
+third method
+------------
+int array[]={45,5,6,68,78,99,7};
+
+List<Integer> list=Arrays.asList(array);
+Collections.sort(list);
+int smallest= list.get(0);
+System.out.println(smallest);
+========================================================
+find the smallest number array  
+
+int array[]={4,46,7,8,8,9,7};
+int smallest=Integer.MAX_VALUE;
+for(int i=0;i<array.length;i++){
+while(array[i]<smallest){
+smallest=array[i];
+}
+
+}
+System.out.println(smallest);
+===========================================================
+int array[]={4,5,6,654,1,45,};
+
+Arrays.sort(array);
+System.out.println(array[0]);
+=====================================================
+Integer array[]={4,2,22,63,5,66,8};
+List<Integer> list=Arrays.asList(array);
+Collections.sort(list);
+System.out.println(list.get(0));
+========================================================================
+find the smallest value in array (Integer.MAX_VALUE)
+----------------------------------------------------
+int array[]={ 44,55,82,88,84,514,14};
+int smallestValue=Integer.MAX_VALUE;
+for(int i=0;i<array.length;i++){
+while(array[i]<smallestValue){
+smallestValue=array[i];
+
+}
+
+}
+System.out.prinrtln(smallestValue);
+
+
+ 
+========================================================================
+Find the smallest vaue in array using Arrays.sort()method
+-------------------------------------------------------------
+int array[]={42,56,25,45,54,545,54,94};
+Arrays.sort(array);
+System.out.println(array[0]);
+
+========================================================================
+Find the smallesrt value in array using Collection
+******************************************************
+Integer array[]={42,56,25,45,54,545,54,94};
+
+List<Integer> list=Arrays.asList(array);
+
+Collections.sort(list);
+int smallest=list.get(0);
+System.out.println(smallest);
+------------------------------------------------------------------------------
+how to reverse sentence in string
+***********************************
+String input="The World is mine"
+String revs="";
+String[] temp=input.split("");
+for(int i=temp.length-1;i>=0;i--){
+revs=revs+temp[i];
+
+}
+System.out.println(revs);
+
+
+----------------------------------------------------------------------------------------
+
+Reverse Sentence of the String
+********************************
+String input="Deva is great";
+String revs="";
+String[] temp= input.split("");
+for(int i=temp.length-1;i>=0;i--){
+revs=revs+temp[i];
+
+
+}
+
+System.out.println(revs);
+
+---------------------------------------------------------------------------------
+how find the element in array]
+*********************************
+int array[]={4,5,55,564,58,27,4};
+int toFind;
+boolean found=false;
+Scanner scanner=new Scanner(System.in);
+toFind=scanner.nextInt();
+
+for (int number:array){
+if(number==toFind){
+found=true;
+}
+
+}
+if(found){
+System.out.println("Number is present");
+
+}else{
+System.out.println("Number is not present");
+
+}
+
+*-------------------------------------------------------------------------------
+How to find the element the array
+---------------------------------------
+int array[]={7,89,56,5,123,889};
+int toFind;
+boolean found=false;
+Scanner scanner=new Scanner(System.in);
+toFind=scanner.nextInt();
+
+for(int number:array){
+if(number==toFind){
+found=true;
+break;
+}
+}
+if (found){
+System.out.println("Number is present");
+
+}else{
+System.out.println("Number not Present");
+
+
+-----------------------------------------------------------------------------------------------
+Find the English alpahabet position
+************************************
+
+ascii value a=97 ,A=65;
+
+char toFind;
+Scanner scanner=new Scanner(System.in);
+
+char toFind=scanner.next().charAt(0);
+
+toFind=Character.toLowerCase(toFind);
+
+int ascii=(int)toFind;
+int position=ascii-96;
+System.out.println(position);
+--------------------------------------------
+find the english alphabet position 
+------------------------------------
+second method
+************//
+ 
+char givenChar;
+Scanner scanner=new Scanner(System.in);
+givenChar=scanner.next().charAt(0);
+givenChar=Character.toUpperCase(givenChar);
+int ascii=(int)givenChar;
+int position=ascii-64;
+System.out.println(position);
+
+------------------------------------------------------------------
+Find the occurence of character in string with iteration
+***********************************************************
+
+String input="dasentidanilaDelhidon";
+char toFind='d';
+int occurence=0;
+
+input=input.toLowerCase();
+for(int i=0;i<input.length();i++){
+if(input.charAt(i)==toFind){
+occurence++
+
+}
+
+}
+System.out.println(occurence);
+
+
+Second method Find the occurence character in string
+*******************************************************
+String input="deLeiBabuDanilaL";
+char toFind='l';
+
+input=input.toLowerCase();
+charToFind=Character.toString(toFind).toLowerCase();
+int actualLength=input.length();
+
+input=input.replace(charToFind,"");
+
+int lengthAfterReplace=input.length();
+System.out.println(actualLength-lengthAfterReplace);
+********--------------------------------------------------------------------------------
+
+Find the occurence of Character in String
+-------------------------------------------
+String input="DelhiFendaTender";
+char toFind='E';
+input=input.toUpperCase();
+int occurence=0;
+
+for(int i=0;i<input.length();i++){
+if(input.charAt(i)==toFind){
+occurence++;
+
+}
+
+}
+
+System.out.println(occurence);
+
+===================================================================
+replacing vowels with special character *
+
+String input="The delhi Is my Favourite";
+
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<input.length();i++){
+
+if (input.charAt(i)=='A'||input.charAt(i)=='E'||
+input.charAt(i)=='I'||input.charAt(i)=='O'||input.charAt(i)=='U'||
+input.charAt(i)=='a'||input.charAt(i)=='e'||input.charAt(i)=='i'||
+input.charAt(i)=='o'||input.charAt(i)=='u'){
+
+charArray[i]='*';
+}
+
+}
+
+for(int i=0;i<input.length();i++){
+System.out.println(charArray[i]);
+
+
+}
+========================================================================
+
+Second method replacing vowels (*)
+----------------------------------
+String replcedText=input.replaceAll("[AEIOU,aeiou]","&");
+
+System.out.println(replacedText);
+
+=============================================================================
+
+Replace the vowels with the special character *
+-------------------------------------------------
+
+String input="The World is Mine";
+
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<input.length();i++){
+if(input.charAt(i)=='A'||input.charAt(i)=='E'||
+input.charAt(i)=='I'||input.charAt(i)=='O'||
+input.charAt(i)=='U'||input.charAt(i)=='a'||input.charAt(i)=='e'||
+input.charAt(i)=='i'||input.charAt(i)=='o'||input.charAt(i)=='u'){
+
+charArray[i]="#";
+
+}
+
+}
+for(int i=0;i<input.length();i++){
+			System.out.println(charArray[i]);
+
+}
+====================================================================
+
+Removing leading and trailing white space 
+============================================
+
+ String givenText=" The game is on ";
+	
+System.out.println(givenText.trim());
+
+System.out.println(givenText.strip());
+System.out.println(givenText.stripLeading());
+System.out.println(givenText.stripTrailing());
+
+System.out.println(givenText.replaceAll("^[ \t]+|[ \t]$",""));
+System.out.println(givenText.replaceAll("^[ \t]",""));
+System.out.println(givenText.replaceAll("[ \t]$",""));
+
+============================================================================
+Replace vowels with the special Character 
+*******************************************
+
+String givenText="The Car is mine";
+
+char[] charArray=givenText.toCharArray();
+
+for(int i=0;i<givenText.length();i++){
+
+if(givenText.charAt(i)=='A'||givenText.charAt(i)=='E'||
+givenText.charAt(i)=='I'||givenText.charAt(i)=='O'||
+givenText.charAt(i)=='U'||givenText.charAt(i)=='a'||givenText.charAt(i)=='e'||givenText.charAt(i)=='i'||
+givenText.charAt(i)=='o'||givenText.charAt(i)=='u'){
+
+charArray[i]='#';
+}
+
+}
+for(int i=0;i<givenText.length();i++){
+System.out.print(charArray[i]);
+
+}
+
+==============================================================================================
+replace vowels with special character '@'  (2nd method)
+*********************************************************
+String givenText="The world Best car Is mine Ander";
+
+System.out.println(givenText.replaceAll("[AEIOU,aeiou]","@"));
+
+
+==========================================================================================
+Remove leading and trailing in white space
+-------------------------------------------------
+
+String givenText=" The trailing is fast  ";
+
+System.out.println("--------------- Frist method-------------");
+System.out.println(givenText.trim());
+
+System.out.println("--------------- Second method-------------");
+System.out.println(givenText.strip());
+System.out.println(givenText.stripLeading());
+System.out.println(givenText.stripTrailing());
+
+System.out.println("--------------- Third method-------------");
+System.out.println(givenText.replaceAll("^[ \t]+|[ \t]$",""));
+System.out.println(givenText.replaceAll("^[ \t]",""));
+System.out.println(givenText.replaceAll("[ \t]$",""));
+==================================================================================
+
+Find the number of vowels in ur name
+=====================================
+
+
+String givenText="AndhaSepnaDenavar"; 
+
+int vowels=0;
+givenText=givenText.toLowerCase();
+
+for(int i=0;i<givenText.length();i++){
+if(givenText.charAt(i)=='a'||givenText.charAt(i)=='e'||givenText.charAt(i)=='i'||
+givenText.charAt(i)=='o'||givenText.charAt(i)=='u'){
+vowels++;
+
+}
+
+}
+
+System.out.println("Ur name as '"+vowels+"' number of vowel(s)");
+
+=============================================================================================
+
+Get the numeric value from String and add
+--------------------------------------------
+String input ="Arul24kantha";
+int total=0;
+
+for(int i=0;i<input.length();i++){
+char character=input.charAt(i);
+if (Character.isDigit(character)){
+total=total+Character.getNumericValue(character);
+
+}
+
+}
+System.out.println(total);
+
+-------------------------------------------------------------------------------------------
+
+Uppercase and lower case convertion without predefined method
+****************************************************************
+String input="TTHE World IS MINE BECAUSE ,the car i love is BENZ";
+
+char[] charArray=input.toCharArray();
+
+
+for(int i=0;i<input.length();i++){
+
+if(charArray[i]=>65 && charArray[i]<=90){
+		charArray[i]=(char)(charArray[i]+32);
+
+
+}
+}
+
+for(int i=0;i<charArray.length;i++){
+System.out.println(charArray[i]);
+
+}
+
+================================================================================
+lower case is convertion without predefined method 
+****************************************************
+
+String input="The ley off is going on the world";
+
+char[] charArray=input.charArray();
+
+for(int i=0; i<=input.length();i++){
+if(charArray[i]>=97 && charArray[i]<=122){
+charArray[i]=(char)(charArray[i]-32);
+}
+
+}
+
+for(int i=0; i<=charArray.length;i++){
+
+System.out.println(charArray[i]);
+
+}
+
+Ascii  A=65 to 90
+Ascii a=97 to 122
+
+Ascii A=65 to 90;
+Ascii a=97 to 122;
+
+Ascii A=65 to 90;
+Ascii a=97 to 122;
+
+Ascii A=65 to 90;
+Ascii a=97 to 122;
+
+Ascii A=65 to 90;      // ascii value alphabet \\
+Ascii a=97 to 122;
+
+Ascii A=65	to 90;
+Ascii a=97 to 122;
+
+
+Ascii A=65 to 90;
+Ascii a=97 to 122;
+
+Ascii A=65 to 90;       // ascii value alphabet\\	
+Ascii a=97 to 122;
+
+Ascii A=65 to 90;
+Ascii a=97 to 122;
+
+Ascii A=65 to 90;
+Ascii a=97 to 122;
+===============================================================================
+uppercase  and lowercase convertion without predefined method 
+*************************************************************
+
+String input="THE WORLD IS MINE ,BENZ IS MINE";
+char[] charArray=input.toCharArray();
+for(int i=0;i<input.length();i++){
+if(charArray[i]>=65 && charArray[i]<=90){
+charArray[i]=(char)(charArray[i]+32);
+
+}
+
+}
+for(int i=0;i<charArray.length;i++){
+System.out.println(charArray[i]);
+
+}
+
+================================================================================
+String input="to world is mine";
+
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<input.length();i++){
+
+if(charArray[i]>=97 && charArray[i]<=122){
+charArray[i]=(char)(charArray[i]-32);
+}
+
+}
+for(int i=0; i<charArray.length;i++){
+System.out.println(charArray[i]);
+
+}
+
+
+ascii A= 65 to 90;
+ascii a=97 to 122;
+============================================================================
+uppercase and lowercase convertion without predefined method
+==============================================================
+
+String input="THE WORLD IS MINE IS ,BENZ IS ALSO MINE";
+
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<input.length();i++){
+if(charArray[i]<=65 && charArray[i]>=90){
+charArray[i]=(char)(charArray[i]+32);
+
+}
+
+
+}
+for(int i=0;i<charArray.length;i++){
+System.out.println(charArray[i]);
+
+}
+
+=============================================================================
+
+upper and lower case convertion without predefined method
+***********************************************************
+{uppercased to lower case }
+
+String input="Delhi IS THE MAIN BUILDING AS BEEN WANTED TO CAR TO BENZ";
+
+char[] charArray=input.toCharArray();
+
+for(int i=0; i<input.length();i++){
+if(charArray[i]>=65 && charArray[i]<=90){
+charArray[i]=(char)(charArray[i]+32);
+
+}
+
+}
+for(int i=0;i<charArray.length;i++){
+
+System.out.println(charArray[i]);
+}
+
+***************************************************************************
+uppercase And lower case convertion without using predefined method
+----------------------------------------------------------------------
+{lower case to upper case }
+
+String input="the world full of benz, i going to do benz";
+
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<input.length();i++){
+if(charArray[i]>=97 && charArray[i]<=122){
+charArray[i]=(char)(charArray[i]-32);
+}
+
+}
+for(int i=0; i<charArray.length;i++){
+
+System.out.println(charArray[i]);
+}
+--------------------------------------------------------------------------
+
+Get the numeric value from string and add 
+*******************************************
+String input="Adinvela34";
+
+int total=0;
+for(int i=0; i<input.length();i++){
+char character =input.charAt(i);
+if(Character.isDigit(character)){
+total=total+character.getNumericValue(character);
+
+}
+
+}
+System.out.println(total)
+
+===============================================================================
+Get the numeric value the String and add
+******************************************
+
+String input="the world is mine 78";
+int total=0;
+
+for(int i=0;i<input.length();i++){
+char character=input.charAt(i);
+if(Character.isDigit(character)){
+total=total+Character.getNumericValue(character);
+}
+
+}
+
+System.out.println(total);
+
+
+=========================================================================
+
+Get the numeric value of string and add
+****************************************
+
+String input="the45valueisgreat";
+int total=0;
+
+for(int i=0;i<input.length();i++){
+char character=input.charAt(i);
+
+if(Character.isDigit(character)){
+total=total+Character.getNumericValue(character);
+
+}
+}
+System.out.println(total);
+
+---------------------------------------------------------------------------------------
+Get the numeric value of from string add
+*****************************************
+String input ="denver is 4 main method in 8 levels";
+int total=0;
+for (int i=0;i<input.length();i++){
+char character=input.charAt(i);
+if(Character.isDigit(character)){
+total=total+Character.getNumericValue(character);
+
+}
+}
+System.out.println(total);
+
+=====================================================================================================
+get the numeric value from String and add
+********************************************
+String input ="the is car 23 is mine 365 days";
+
+int total=0;
+for(int i=0; i<input.length();i++){
+char character=input.charAt(i);
+if(Character.isDigit(character)){
+total=total+Character.getNumericValue(Character);
+}
+
+
+}
+System.out.print(total);
+
+====================================================================================================
+upper case and lower case convertion without using predefined method
+**********************************************************************
+{UPPERcase to LowerCase}
+
+String input="THE GANG IS UR FRIEND";
+
+char[] charArray=input.toCharArray();
+for(int i=0;i<input.length();i++){
+if(charArray[i]>=65 && charArray[i]<=90){
+charArray[i]=(char)(charArray[i]+32);
+}
+
+}
+
+for(int i=0;i<charArray.length;i++){
+System.out.print(charArray[i]);
+
+}
+------------------------------------------------------------------------------------------------------------
+
+
+{lower case to upper case}
+
+String input="the bez car is mine";
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<input.length();i++){
+if(charArray[i]>=97 && charArray[i]<=122){
+charArray[i]=(char)(charArray[i]-32);
+
+
+}
+
+}
+for(int i=0;i<charArray.length;i++){
+
+System.out.print(charArray[i])
+}
+
+ascii A= 65 to 90;
+ascii a= 97 to 122;
+ 
+ascii A= 65 to 90;
+ascii a=97 to 122;
+
+ascii A=65 to 90;
+ascii a=97 to 122;
+
+
+
+Ascii A=65 to 90;
+Ascii a=97 to 122;
+
+====================================================================================================
+
+Uppercase and Lowercase convertion without using predefined method
+/*******************************************************************
+{uppercase to lowerCASE}
+String input ="THE WORLD NOT ENOUGTH ";
+
+char[] charArray=input.toCharArray();
+
+for(int i=0; i<input.length();i++){
+if(charArray[i]>=65 && charArray[i]<=90){
+
+charArray[i]=(char)(charArray[i]+32);
+}
+
+
+}
+for(int i=0;i<charArray.length;i++){
+System.out.print(charArray[i]);
+
+
+
+}
+====================================================================================================
+{LOWER CASE TO UPPERCASE}
+
+String input="the benz is mine";
+
+char[] charArray=input.toCharArray();
+
+for(int i=0; i<input.length();i++){
+if(charArray[i]>=97 && charArray[i]<=122){
+
+charArray[i]=(char)(charArray[i]+32);
+}
+
+}
+
+for(int i=0;i<charArray.length;i++){
+System.out.print(charArray[i]);
+
+}
+
+====================================================================================================
+
+Check odd or even number
+*************************
+Scanner scanner=new Scanner(System.in);
+int input=scanner.nextInt();
+
+if(input%2==0){
+System.out.println("number is even");
+
+}else{
+System.out.println("number is odd");
+}
+==================================================================
+ print odd number from 1 to 10
+**********************************
+
+for(int i=1;i<=10;i++){
+if (i%2!=0){
+System.out.println(i);
+}
+
+}
+-----------------------------------------------------------------------------
+Print even number  1 to 600
+****************************
+
+for(int i=1;i<=600;i++){
+if(i%2==0){
+System.out.println(i);
+}
+
+}
+----------------------------------------------------------------------------
+count odd number 1 to 100
+**************************
+int count=0;
+
+for(int i=1;i<=100;i++){
+if(i%2!=0){
+count++;
+}
+
+}
+System.out.println(count);
+
+------------------------------------------------------------------------------
+program for Muiltiple inheritance
+---------------------------------
+
+package org.sample ;
+
+public Interface AxisBank{
+void savings();
+void deposite();
+}
+
+package org.sample;
+public Interface IciciBank{
+void savings();
+void deposite();
+void fixed();
+}
+
+package org.sample;
+public class Hdfcbank implement IciciBank,AxisBank{
+
+@override
+public void savings(){
+System.out.println("hdfc bank saving is 6%");
+
+}
+@override
+public void deposite(){
+
+System.out.println("hdfc bank deposite is 5% ");
+
+}
+@override
+public void fixed(){
+
+System.out.println(hdfc bank fixed is 4% );
+}	
+
+public static void main(String[] args){
+
+HdfcBank b=new HdfcBank();
+b.saving();
+b.deposite();
+b.fixed();
+
+}
+--------------------------------------------------------------------------------------------------------
+package org.sample;
+public Interface AxisBank(){
+void saving();
+void fixed();
+}
+
+package org.sample;
+public  Interface IciciBank(){
+void saving();
+void deposite();
+void fixed();
+
+}
+
+package org.sample;
+public class HdfcBank implement Icici,Axisbank{
+
+@overide 
+public void Saving(){
+System.out.println("saving 6%");
+
+}
+
+@override
+public void deposite();
+System.out.println("deposite 8% ");
+
+
+}
+@override
+public void fixed(){
+System.out.println("fixed 7% ");
+
+}
+public static void main(String[] args){
+HdfcBank hf=new HdfcBank();
+hf.saving();
+hf.deposite();
+hf.fixed();
+
+=========================================================================================================
+Program muiltiple inhertence
+------------------------------
+package org.sample;
+
+public Interface AxisBank(){
+void saving();
+void deposite();
+} 
+package org.sample;
+public Interface IciciBank(){
+void saving();
+void deposite();
+void fixed();
+
+}
+package org.sample;
+public Class HdfcBank(){
+
+@override
+public void saving(){
+System.out.println("saving 10%");
+
+}
+@override
+public void fixed(){
+System.out.println("fixed 8%);
+}
+@override
+public void deposite(){
+System.out.println("deposite 7%");
+
+}
+public static void main(String[] args){
+
+HdfcBank hf=new HdfcBank();
+hf.saving();
+hf.fixed();
+hf.deposite();
+
+
+}
+
+}
+=======================================================================================================
+ muiltiple inheritance
+***********************
+package com.sample;
+public Impliment AxisBank{
+
+void saving();
+void fixed();
+
+}
+package com.sample;
+public Impliment Icicibank{
+void saving();
+void fixed();
+void deposite();
+
+}
+package com.sample;
+public class HdfcBank{
+
+@override
+public void saving(){
+System.out.println("saving 7%");
+}
+@override
+public void fixed(){
+system.out.println("fixed 5%);
+}
+@override
+public void deposite(){
+System.out.println("deposite 6%);
+
+}
+public static void main(String[] args){
+HdfcBank fb=new HdfcBank();
+
+fb.saving();
+fb.fixed();
+fb.deposite();
+
+}
+}
+===================================================================================================
+user defined map {saba sir program}
+================
+package org.sample;
+//public class A{
+//private String name();
+//public String getName(){
+//return name();
+//}
+//public void setName(String name){
+//this.name =name;
+//}
+//package org.sample;
+//import java.util.Map;
+//import java.util.LinkedHashMap;
+//import java.util.Set;
+//import java.util.EntrySet;
+//public class B{
+//public static void main(string [] args){
+//A a=new A();
+//a.setName("java");
+//A a1= new A();
+//a1.setName("selenium");
+//A a2=new A();
+//a2.setName("python");
+//Map<Integer,A> m= new LinkedHashMap<>();
+//m.put(1,a);
+//m.put(2,a1);
+//m.put(3,a2);
+//Set<EntrySet<Integer,A>>entrySet=new EntrySet<>();
+//for(EntrySet<Integer,A> entry:entrySet){
+//system.out.printIn("employee :"+entry.get(key));
+//system.out.printIn("employee name is :"+entry.get(value).getName());
+//}}
+//OUTPUT:
+//1
+//employee name is :java
+//2
+//employee name is :selenium
+//3
+//employee name is : python
+//        
+
+===================================================================================================
+
+package com.sample;
+
+public class A{
+private String name();
+public String getName(){
+return name();
+
+}
+	
+
+
+}
+
+package com.sample;
+public class B{
+public static void main(String[] args){
+A a=new A();
+a.setName("python");
+A a1=new A();
+a1.setName("fenda");
+A a2=new A();
+a2.setName("defi");
+
+Map<Integer,A> m=new LinkedHashMap<>();
+m.put(1,a);
+m.put(2,a1);
+m.put(3,a2);
+
+Set<Entry<Integer,A>> entrySet=new EntrySet<>();
+for(EntrySet<Integer,A> entry:entrySet){
+System.out.println(entry.get(key));
+System.out.println(entry.get(value).getName());
+
+}
+
+
+}
+---------------------------------------------------------------------------------
+Arrange in assending order 
+=============================
+
+int [] array=new int[5];
+
+array[0]=400;
+array[1]=200;
+array[2]=500;
+array[3]=100;
+array[4]=300;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+
+if(array[i]>array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+
+}
+
+}
+for(int i=0;i<array.length;i++){
+System.out.println(array[i]);
+
+}
+===============================================================================
+
+asscending order in array
+*************************
+int [] array=new int[5];
+
+array[0]=100;
+array[1]=400;
+array[2]=500;
+array[3]=200;
+array[4]=300;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if (array[i]>array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+
+}
+
+}
+for(int i=0;i<array.length;i++){
+System.out.println(array[i]);
+
+
+}
+----------------------------------------------------------------------------------
+Asscending order in array
+**************************
+
+int[] array=new int[5];
+array[0]=100;
+array[1]=300;
+array[2]=500;
+array[3]=200;
+array[4]=400;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]>array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+
+
+}
+
+
+}
+
+for(int i=0; i<array.length;i++){
+System.out.println(array[i]);
+
+}
+===============================================================================
+
+desending order in array
+-------------------------
+
+int [] array=new int[5];
+
+array[0]=400;
+array[1]=200;
+array[2]=500;
+array[3]=100;
+array[4]=300;
+
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+
+if(array[i]<array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+}
+
+
+}
+
+}
+for(int i=0;i<array.length;i++){
+System.out.println(array[i]);
+
+}
+====================================================================================
+
+Maximum number in array
+***********************
+
+int[] array=new int[5];
+array[0]=200;
+array[1]=500;
+array[2]=300;
+array[3]=400;
+array[4]=100;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]<array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+
+}
+
+}
+System.out.println(array[0]);
+
+======================================================================================
+Minimum number in array
+***********************
+
+int[] array=new int[5];
+array[0]=200;
+array[1]=500;
+array[2]=400;
+array[3]=100;
+array[4]=300;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]>array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+
+}
+
+}
+
+system.out.println(array[0]);
+--------------------------------------------------------------------------------------
+2nd maximum number in array
+****************************
+int[] array=new int[5];
+array[0]=100;
+array[1]=900;
+array[2]=300;
+array[3]=200;
+array[4]=800;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]<array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+}
+}
+
+System.out.println(array[1]);
+
+=========================================================================================
+Third minimum number
+*********************
+int [] array=new int[5];
+array[0]=800;
+array[1]=500;
+array[2]=100;
+array[3]=300;
+array[4]=200;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]>array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+
+}
+}
+}
+
+System.out.println(array[2]);
+=============================================================================================
+remove duplicate in array
+===========================
+
+int[] array=new int[8];
+array[0]=100;
+array[1]=200;
+array[2]=200;
+array[3]=500;
+array[4]=300;
+array[5]=200;
+array[6]=700;
+array[7]=800;
+
+
+Set<Integer> set=new LinkedHashSet<Integer>();
+
+for(int i=0;i<array.length;i++){
+set.add(array[i]);
+
+}
+for(Integer newSet:set){
+System.out.println(newSet);
+
+}
+--------------------------------------------------------------------------
+remove duplicate in array
+**************************
+
+int [] array=new int[5];
+
+array[0]=12;
+array[1]=44;
+array[3]=55;
+array[4]=12;
+array[2]=11;
+
+Set<Integer> set=new LinkedHashSet<>();
+for(int i=0;i<array.length;i++){
+set.add(array.charAt(i));
+
+}
+for(Integer newSet:set){
+System.out.println(newSet);
+}
+=============================================================================
+
+Minimum number in array
+***********************  
+int[] array=new int[5];
+
+array[0]=700;
+array[1]=500;
+array[2]=200;
+array[3]=400;
+array[4]=100;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]>array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+}
+}
+}
+for(int i=0;i<array.length;i++)
+
+System.out.println(array[i]);
+***********************************************************************************
+
+Maximum number in array
+------------------------
+
+int[] array=new int[8];
+
+array[0]=700;
+array[1]=500;
+array[2]=600;
+array[3]=400;
+array[4]=200;
+array[5]=100;
+array[6]=300;
+array[7]=800;
+
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]<array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+}
+}
+}
+System.out.println(array[0]);
+
+==================================================================
+find the desending number in array.
+***********************************
+int [] array=new int[5];
+array[0]=100;
+array[1]=500;
+array[2]=400;
+array[3]=300;
+array[4]=200;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+
+if(array[i]<array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+}
+}
+}
+for(int i=0;i<array.length;i++){
+System.out.println(array[i]);
+
+}
+
+}
+
+}
+-----------------------------------------------------------------------------------
+
+Assending order in array
+**************************
+
+int [] array=new int[5];
+array[0]=500;
+array[1]=200;
+array[2]=400;
+array[3]=100;
+array[4]=300;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]>array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+}
+}
+for(int i=0;i<array.length;i++){
+System.out.println(array[i]);
+
+
+}
+
+**************************************************************************************
+Print Odd sum number
+=====================
+	int sum=0;
+for(int i=1;i<=80;i++){
+if(i%2!=0)
+sum+=i;
+
+}
+System.out.println(sum);
+
+****************************************************************************************
+
+Print sum of even number
+************************
+int sum=0;
+
+for(int i=1;i<=80;i++){
+
+if(i%2==0){
+sum+=i;
+
+}
+}
+ System.out.println(sum);
+======================================================================================
+count the even number
+**********************
+
+int count=0;
+
+for(int i=1;i<=100;i++){
+if(i%2==0){
+count++;
+
+}
+}
+System.out.println(count);
+
+================================================================================
+print the consonant count in string
+====================================
+
+
+String input="The word is mine urs is gone";
+int count=0;
+input=input.toLowerCase();
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<input.length();i++){
+if(!(charArray[i]=='a'||charArray[i]=='e'||charArray[i]=='i'||charArray[i]=='o'||charArray[i]=='u'
+||charArray[i]=='A'||charArray[i]=='E'||charArray[i]=='I'||charArray[i]=='O'||charArray[i]=='U')){
+count++;
+
+}
+
+}
+
+System.out.println(count);
+
+======================================================================================================
+
+print the consonant value in the String
+****************************************
+
+String given="Welcome to java class today";
+given=given.toLowerCase();
+char[]charArray=given.toCharArray();
+
+Map<Character,Integer> map=new TreeMap<>();
+
+for(int i=0;i<charArray.length;i++){
+
+char chr=charArray[i];
+
+if(chr>='a'&&chr<='z'){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u')){
+if(map.containsKey(chr)){
+Integer intger=map.get(charArray[i]);
+map.put(chr,intger+1);
+
+}else{
+map.put(chr,1);
+}
+}
+
+}
+
+}
+Set<Entry<Character,Integer>> entrySet=map.entrySet();
+
+for(Entry<Character,Integer> entry:entrySet){
+System.out.println(entry);
+
+}
+
+===========================================================================================
+
+print the consonent value in the string
+=======================================
+   
+String given="World is mine,To change the Game!";	
+given=given.toLowerCase();
+char[] charArray=given.toCharArray();
+
+Map<Character,Integer> map=new TreeSet<>();
+
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i];
+
+if(chr>='a'&&chr<='z'){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u')){
+if(map.containsKey(chr)){
+Integer integer=map.get(charArray[i]);
+map.put(chr,integer+1);
+}else{
+map.put(chr,1);
+}
+}
+
+}
+
+}
+Set<Entry<Character,Integer>> entrySet=map.entrySet();
+for(Entry<Character,Integer> entry:entrySet){
+
+System.out.println(entry);
+}
+
+--------------------------------------------------------------------------------------------
+
+print Consonant value in string
+*******************************
+String given="The value is more Fun";
+
+	given=given.toLowerCase();
+char[] charArray=given.toCharArray();
+Map<Character,Integer> map=new TreeMap<>();
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i];
+if(chr>='a'&&chr<='z'){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u')){
+if(map.containsKey(chr)){
+Integer intiger=map.get(charArray[i]);
+map.put(chr,intiger+1);
+}else{
+map.put(chr,1);
+
+}
+
+}
+
+}
+
+}
+
+Set<Entry<Character,Integer>> entrySet=map.entrySet();
+for(Entry<Character,Integer> entry:entrySet){
+System.out.println(entry);
+
+}
+=============================================================================================
+
+Count caps,small,digit,special count without special method
+==============================================================
+
+
+String input="Sathish123@gmail.com";
+int s=0,c=0,d=0,ch=0,
+String small="",caps="",digit="",splChr="";
+for(int i=0;i<input.length();i++){
+char chr=input.charAt(i);
+if(chr>=97&&chr<=122){
+s++;
+small=small+chr;
+}else if(chr>=65&&chr<=90){
+c++;
+caps=caps+chr;
+}else if(chr>=48&&chr<=57){       *ascii value 0 to 9{48 to 57}
+=d++;											*ascii value A= 65 to 90
+												*ascii value a= 97 to 122				
+digit=digit+chr;
+}else{
+ch++;
+splChr=splChr+chr;
+
+}
+}
+
+System.out.println("small==>"+s+"==>"+small);
+System.out.println("small==>"+c+"==>"+caps);
+System.out.println("small==>"+d+"==>"+digit);
+System.out.println("small==>"+ch+"==>"+splChr);
+--------------------------------------------------------------------------------------------
+
+ascii value for 'digit'==> 48 to57
+ascii value for 'digit'==> 48 to 57
+ascii value of 'digit'==> is 48 to 57
+
+ascii value of 'A'==> 65 to90
+ascii value of 'a'==>97 to122
+
+-------------------------------------------------------------------------------------------
+
+count all caps ,small,digit,spl character in string without predefind method
+******************************************************************************
+
+String given="Javed2443@gmail.com";
+int s=0,c=0,d=0,spl=0;
+String small="",caps="",digit="",splChr="";
+
+for(int i=0;i<given.length();i++){
+char chr=given.charAt(i);
+
+if(chr>=97&&chr<=122){
+s++;
+small=small+chr;
+}else if(chr>=65&&chr<=90){
+c++;
+caps=caps+chr;
+}else if(chr>=48&&chr<=57){
+d++;
+digit=digit+chr;
+
+}else{
+spl++;
+splChr=splChr+chr;
+
+}
+}
+
+System.out.println("small==>"+s+"==>"+small);
+System.out.println("capatal==>"+c+"==>"+caps);
+System.out.println("Digit==>"+d+"==>"+digit);
+System.out.println("SpecialCharacter==>"+spl+"==>"+splChr);
+
+------------------------------------------------------------------------------------------
+
+Count caps,small,digit,splchr in string using predefined method
+*****************************************************************
+String given="sath#is&h789@gmail.com";
+int s=0,c=0,d=0,spl=0;
+String small="",caps="",digit="",splChr="";
+
+for(int i=0;i<given.length();i++){
+char chr=given.charAt(i);
+if(Character.isLowerCase(chr)){
+s++;
+small=small+chr;
+}else if(Character.isUpperCase(chr)){
+c++;
+caps=caps+chr;
+}else if(Character.isDigit(chr)){
+d++;
+digit=digit+chr;
+}else{
+spl++;
+splChr=splChr+chr;
+}
+}
+System.out.println("small==>"+s+"==>"+small);
+System.out.println("capatal==>"+c+"==>"+caps);
+System.out.println("Digit==>"+d+"==>"+digit);
+System.out.println("SpecialCharacter==>"+spl+"==>"+splChr);
+
+================================================================================================
+
+change the frist letter of the word capital in a string
+********************************************************
+String given=" welcome to world of geno ";
+String toChg="";
+
+String[] stringArray=given.split(" ");
+
+for(String string:stringArray){
+char chr=string.charAt(0);
+char a =Character.toUpperCase(chr);
+String b=string.substring(1);
+toChg=toChg+a+b+"";
+
+}
+System.out.println(toChg);
+
+****************------------------------------------------------------------------------**************
+count the consonant the valur in string
+==========================================
+
+
+String given ="The world is so buityfull";
+
+int count=0;
+given=given.toLowerCase();
+
+char[] charArray=given.toCharArray();
+
+for(int i=0;i<charArray.length;i++){
+
+char chr=charArray[i];
+if(chr>='a'&&chr<='z'){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u')){
+count++;
+
+}
+
+
+}
+
+}
+System.out.println(count);
+
+
+============================================================================================
+
+print the the consolnate value in the string
+-------------------------------------------------
+
+String given="The Wordld Is out Of the Box";
+
+char[] charArray=given.toCharArray();
+
+Map<Character,Integer> map=new TreeMap<>();
+
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i];
+if(chr>='a'&&chr<='z'||chr>='A'&&chr<='Z'){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u'||chr=='A'
+||chr=='E'||chr=='I'||chr=='O'||chr=='U')){
+if(map.containsKey(chr)){
+Integer intiger=map.get(charArray[i]);
+map.put(chr,intiger+1);
+}else{
+map.put(chr,1);
+}
+}
+}
+}
+Set<Entry<Character,Integer>> entrySet=map.entrySet();
+for(Entry <Character,Integer> entry:entrySet ){
+System.out.println(entry);
+}
+
+=======================================================================================
+
+print the consonant in string
+******************************
+String input="Welcome to World";
+int count=0;
+char[] charArray=input.toCharArray();
+for(int i=0; i<charArray.length;i++){
+char chr=charArray[i];
+if(chr>='a'&&chr<='z'||chr>='A'&&chr<='Z'){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u'||chr=='A'||chr=='E'||chr=='I'||chr=='O'||chr=='U')){
+count++;
+}
+}
+}
+System.out.println(count);
+
+==========================================================================================
+Print the consonant value in String
+======================================
+
+String input="Welcome to World of Java";
+char[] charArray=input.toCharArray();
+
+Map<Character,Integer> map=new TreeMap<>();
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i];
+if(chr>='a'&&chr<='z'||chr>='A'&&chr<='Z'){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u'||chr=='A'||chr=='E'||chr=='I'||chr=='O'||chr=='U')){
+if(map.containsKey(chr)){
+Integer intger=map.get(charArray[i]);
+map.put(chr,intger+1);
+}else{
+map.put(chr,1);
+}
+}
+}
+
+}
+Set<Entry<Character,Integer>> entrySet=map.entrySet();
+for(Entry<Character,Integer> entry:entrySet){
+System.out.println(entry);
+
+}
+--------------------------------------------------------------------------------------
+count all caps,small,digit,special character withou using predefind method
+***************************************************************************
+ 
+String given="Sathish501#%^@gmail.com";
+int s=0,c=0,d=0,spl=0;
+String small="",caps="",digit="",splCha="";
+
+for(int i=0;i<given.length();i++){
+char chr=given.charAt(i);
+
+if(chr>=97&&chr<=122){
+s++;
+small=small+chr;
+}else if(chr>=65&&chr<=90){
+c++;
+caps=caps+chr;
+}else if(chr>=48&&chr<=57){
+d++;
+digit=digit+chr;
+}else{
+spl++;
+splCha=splCha+chr;
+}
+}
+
+System.out.println("Small==>"+s+"==>"+small);
+System.out.println("Captial==>"+c+"==>"+caps);
+System.out.println("Digit==>"+d+"==>"+digit);
+System.out.println("Special Character==>"+s+"==>"+splCha);
+
+======================================================================================
+count all caps,small,digit,special character using predefined method
+======================================================================
+String given="AjayDevGan21Forti#&*rt@gmail.coom";
+int s=0,c=0,d=0,spl=0;
+String small="",caps="",digit="",splCha="";
+for(int i=0;i<given.length();i++){
+char chr=given.charAt(i);
+if(Character.isLowerCase(chr)){
+s++;
+small=small+chr;
+}else if(Character.isUpperCase(chr)){
+c++;
+caps=caps+chr;
+}else if(Character.isDigit(chr)){
+d++;
+digit=digit+chr;
+}else{
+spl++;
+splCha=splCha+chr;
+}
+
+}
+System.out.println("Small==>"+s+"==>"+small);
+System.out.println("Capital==>"+c+"==>"+caps);
+System.out.println("Digit==>"+d+"==>"+digit);
+System.out.println("SpecialCharacter==>"+spl+"==>"+splCha);
+
+=====================================================================================
+
+convert every letter of the frist letter capital
+***************************************************
+String input="welcome to world sk with benz";
+String toChg="";
+String[] stringArray=input.split(" ");
+
+for(String string:stringArray){
+char chr=string.charAt(0);
+char a=Character.toUpperCase(chr);
+String b=string.substring(1);
+toChg=toChg+a+b+" ";
+}
+
+System.out.println(toChg);
+-----------------------------------------------------------------------------------------
+
+Remove duplicate in array
+-------------------------------
+int [] array=new int[8];
+
+array[0]=700;
+array[1]=50;
+array[2]=10;
+array[3]=50;
+array[4]=70;
+array[5]=7;
+array[6]=60;
+array[7]=7;
+
+
+Set<Integer> set=new LinkedHashSet<>();
+for(int i=0;i<array.length;i++){
+set.add(array[i]);
+}
+
+for(Integer newSet:set ){
+System.out.println(newSet);
+}
+======================================================================================
+
+print minimum value in a Array
+===============================
+
+int [] array=new int[5];
+array[0]=700;
+array[1]=500;
+array[2]=300;
+array[3]=400;
+array[4]=100;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+
+if(array[i]>array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+}
+}
+
+}
+
+System.out.println(array[0]);
+
+==================================================================================
+
+convert frist letter of string to capital
+******************************************
+String input="welcome to all offer u have";
+String toChg="";
+String[] stringArray=input.split(" ");
+
+for(String string:stringArray){
+char chr=string.charAt(0);
+char a=Character.toUpperCase(chr);
+String b=string.substring(1);
+toChg=toChg+a+b+" ";
+}
+
+System.out.println(toChg);
+================================================================================
+
+convert the frist letter of string to capital
+*********************************************
+ 
+String given="the world is mine";
+String toChg="";
+
+String[] stringArray=given.split(" ");
+
+for(String string:stringArray){
+char chr=string.charAt(0);
+chr a=Character.toUpperCase(chr);
+String b=string.sustring(1);
+toChg=toChg+a+b+" ";
+}
+System.out.println(toChg);
+===============================================================================
+
+Count all caps ,small,digit, special character using predefined method
+**********************************************************************
+String given="SathishFend#$3212@gmail.com";
+int s=0,c=0,d=0,splChr=0;
+String small="",caps="",digit="",spl="";
+
+for(int i=0;i<given.length();i++){
+char chr=given.charAt(i);
+if(Character.isLowerCase(chr)){
+s++;
+small=small+chr;
+}else if(Character.isUpperCase(chr)){
+c++;
+caps=caps+chr;
+}else if(Character.isDigit(chr)){
+d++;
+digit=digit+chr;
+}else{
+splChr++;
+spl=spl+chr;
+}
+
+}
+System.out.println("Small==>"+s+"==>"+small);
+System.out.println("Capatial==>"+c+"==>"+caps);
+System.out.println("Digits==>"+d+"==>"+digit);
+System.out.println("SpecialCharacter==>"+splChr+"==>"+spl);
+
+===============================================================================
+Count all caps ,small, digit, and special character using without predefined method
+*************************************************************************************
+String input="theDelax2344&*$%$^@gmail.com";
+int s=0,c=0,d=0,spl=0;
+String small="",caps="",digit="",splChr="";
+
+for(int i=0;i<input.length();i++){
+char chr=input.charAt(i);
+if(chr>=97&&chr<=122){
+s++;
+small=small+chr;
+}else if(chr>=65&&chr<=90){
+c++;
+caps=caps+chr;
+
+}else if(chr>=48&&chr<=57){
+d++;
+digit=digit+chr;
+}else{
+spl++;
+splChr=splChr+chr;
+}
+
+}
+
+System.out.println("Small==>"+s+"==>"+small);
+System.out.println("Capatal==>"+c+"==>"+caps);
+System.out.println("Digit==>"+d+"==>"+digit);
+System.out.println("SpecialCharacter==>"+spl+"==>"+splChr);
+
+------------------------------------------------------------------------------------------
+String REeverse
+----------------
+
+package com.sample;
+
+public class reverse{
+
+String given="sample";
+
+StringBuffer buffer=new StringBuffer();
+buffer.append(given);
+System.out.println(buffer.reverse());
+}
+
+--------------------------------------------------------------------------------------
+String reverse using string builder
+--------------------------------------
+
+package com.sample;
+
+public class reverse{
+
+String given="The World";
+StringBuilder builder=new StringBuilder();
+
+builder.append(given);
+
+System.out.println(builder.reverse());
+
+}
+=================================================
+
+String reverse
+**************
+
+package com.sample;
+
+public class reverse{
+
+	String given="Fendaaa";
+char[] array=given.toCharArray();
+
+List<Character> list=new ArrayList<>();
+
+for(Character newArray:array){
+list.add(newArray);
+}
+Collections.reverse(list);
+
+ListIterator<Character> iterator=list.listIterator();
+While(iterator.hasNext()){
+System.out.println(iterator.next());
+
+}
+
+}
+=================================================================================
+
+package com.sample;
+
+public class Reverse{
+
+String given="Reved";
+String revs="";
+
+for(int i=given.length()-1;i>=0;i--){
+revs=revs+given.charAt(i);
+
+
+}
+
+System.out.println(revs);
+
+}
+==============================================================================
+String Reverse using String buffer
+*********************************
+package com.sample;
+public class Reverse{
+
+String given="tremen";
+StringBuffer buffer=new StringBuffer();
+buffer.append(given);
+System.out.println(buffer.reverse());
+}
+===============================================================================
+
+String reverse using string builder
+===================================
+
+package com.sample;
+
+public class Reverse{
+
+String given="Fendaaafe";
+StringBuilder builder=new StringBuilder();
+builder.append(given);
+
+System.out.println(builder.reverse());
+
+
+
+
+}
+------------------------------------------------------------------------------
+String reverse using collection 
+********************************
+
+package com.sample;
+public class Reverse{
+
+String given="Fedea";
+char[] array=given.toCharArray();
+List<Character> list=new ArrayList<>();
+for(Character newArray:array){
+list.add(newArray);
+
+}
+Collections.reverse(list);
+ListIterator<Character> listIterator=list.listIterator();
+
+while(listIterator.hasNext()){
+System.out.println(listIterator.next());
+
+}
+-----------------------------------------------------------------------------------------
+reverse string 
+*****************
+
+String given="frena";
+String revs="";
+
+for(int i<given.length()-1;i>=0;i--){
+revs=revs+given.charAt(i);
+
+}
+
+System.out.println(revs);
+------------------------------------------------------------------------------------------------
+Increase date 10
+******************	
+String input="2022-02-28";
+
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance= Calender.getInstance();
+
+instance.setTime(sdf.parse(input));
+instance.add(Calander.DATE,10);
+String format=sdf.format(instance.getTime());
+
+System.out.println(format);
+
+=======================================================================================
+String input="2022-02-08";
+
+SimpleDateFormate sdf=new SimpleDateFormate("dd-MM-yyy");
+Calandarinstance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.DATE,10);
+
+String format=sdf.format(instance.getTime());
+
+System.out.println(format);
+=========================================================================================
+
+String input="2022-02-10";
+
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.DATE,10);
+String format=sdf.format(instance.getTime());
+
+System.out.println(format);
+==========================================================================================
+
+String input="2022-10-20";
+SimpleDateFormat dateFormat=new SimpleDateFormat(yyy-MM-dd);
+                                   
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.DATE,10);
+String format=sdg.format(insatnce.getTime());
+System.out.println(format);
+========================================================================================
+
+String input="2020-02-18";
+
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.DATE,11);
+System.out.println(sdf.format(instance.getTime()));
+===============================================================================
+
+	Increase date by 10
+****************************
+
+package com.sample;
+public class Reverse{
+
+public static void main(String[] args){
+
+String input="2022-01-12";
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.DATE,10);
+System.out.println(sdf.format(instance.getTime()));
+}
+}
+======================================================================================
+increase date by 10
+***********************
+
+package com.sample;
+public class DateIncrease{
+public static void main(String[] args){
+
+String input="2020-02-10";
+SimpleDateFormate sdf=new SimpleDateFormate("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.MONTH,10);
+
+
+
+
+}
+
+
+
+}
+----------------------------------------------------------------------------------
+increase currenrt date by 10
+*********************************
+
+package com.sample;
+public class DateIncrease{
+
+public static void main(String[] args){
+String input="2020-05-12";
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.DATE,10);
+System.out.println(sdf.format(instance.getTime()));
+
+
+}
+
+}
+======================================================================
+Increase current year 10
+****************************
+
+package com.sample;
+public class DateIncrease{
+
+public static void main(String[] args){
+
+String input="2022-02-01 ";
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.YEAR,10);
+System.out.println(sdf.format(instance.getTime()));
+
+
+
+}
+
+
+}
+
+===========================================================================================
+Increase current month by 10
+*********************************
+
+
+package com.sample;
+public class MonthIncrease{
+public static void main(String[] args){
+
+String input="2022-05-12";
+
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.MONTH,3);
+System.out.println(sdf.format(instance.getTime()));
+
+
+}
+}
+==============================================================================================
+
+print the consonant count  in string
+**************************************
+
+package com.sample;
+
+public class Consonant Count{
+public static void main(String[] args){
+
+String input="TheValeisMine";
+int count=0;
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<input.length();i++){
+if(!(charArray[i]=='a'||charArray[i]=='e'||charArray[i]=='i'||charArray[i]=='o'||charArray[i]=='u'||
+charArray[i]=='A'||charArray[i]=='E'||charArray[i]=='I'||charArray[i]=='O'||charArray[i]=='U')){
+count++;
+
+}
+
+
+}
+
+System.out.println(count);
+
+
+
+}
+
+}
+
+=======================================================================================
+
+Count the consonent value
+=========================
+
+String input="The Denvar Fenda As Goal";
+int count=0;
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i];
+if((chr>='a'&&chr<='z')||(chr>='A'&&chr<='Z')){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u'||chr=='A'
+||chr=='E'||chr=='I'||chr=='O'||chr=='U')){
+
+count++;
+}
+
+}
+
+}
+System.out.println(count);
+
+===========================================================================================
+
+print the consonent value in string
+**************************************
+
+String input="The Value Is Denvar";
+
+char[] charArray=input.toCharArray();
+ Map<Character,Integer> map=new TreeMap<>();
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i];
+
+if((chr>='a'&&chr<='z')||(chr>='A'&&chr<='Z')){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u'
+   ||chr=='A'||chr=='E'||chr=='I'||chr=='O'||chr=='U')){
+
+if(map.contains(chr)){
+Integer integer=map.get(chr[i]);
+map.add(chr,integer+1);
+
+}else{
+map.add(chr,1);
+}
+
+}
+
+}
+
+}
+Set<Entry<Character,Integere>> entrySet=map.entrySet();
+
+for(Entry<Character,Integer> entry:entrySet){
+System.out.println(entry);
+
+}
+
+============================================================================================
+print the consonent value in a string
+*************************************
+
+String input="The World Is Mine";
+char[] charArray=input.toCharArray();
+Map<Character,Integer> map=new TreeMap<>();
+
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i];
+
+if((chr>='a'&&chr<='z')||(chr>='A'&&chr<='Z')){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u'||
+    chr=='A'||chr=='E'||chr=='I'||chr=='O'||chr=='U')){
+if(map.containsKey(chr)){
+Integer integer=map.get(chr);
+map.put(chr,integer+1);
+}else{
+map.put(chr,1);
+}
+
+}
+
+}
+
+
+}
+
+Set<Entry<Character,Integer>> entrySet=map.entrySet();
+
+for(Entry<Character,Integer> entry:entrySet){
+System.out.println(entry);
+}
+
+
+================================================================================================
+
+ print the consonant value in string
+ ====================================
+String input="The world is mine";
+char[] charArray=input.charArray();
+
+Map<Character,Integer> map=new TreeMap<>();
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i];
+if((chr>='a'&&chr<='z')||(chr>='A'&&chr<='Z')){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u'||chr=='A'||chr=='E'||chr=='I'||
+		chr=='O'||chr=='U')){
+if(map.containskey(chr)){
+Integer intger=map.get(chr);
+map.put(chr,intger+1);
+
+}else{
+map.put(chr,1);
+}
+
+}
+
+}
+
+
+}
+Set<Entry<Character,Integer>> entrySet=map.entrySet();
+for(Entry<Character,Integer> entry:entrySet){
+
+System.out.println(entry);
+
+
+
+}
+
+===========================================================================================
+Count All caps,small,digit,special character 
+************************************************
+
+String input="Sathish@#$!@Gmail.com";
+int s=0,c=0,d=0,spl=0;
+String small="",caps="",digit="",splChr="";
+char[] chrArray=input.toCharArray();
+for(int i=0;i<input.length;i++){
+char chr=chrArray[i];
+if(chr>=97&&chr<=122){
+s++;
+small=small+chr;
+
+}else if(chr>=65&&chr<=90){
+c++;
+caps=caps+chr;
+}else if(chr>=48&&chr<=57){
+d++;
+digit=digit+chr;
+}else{
+spl++;
+splChr=splChr+chr;
+
+}
+}
+
+System.out.println("Small==>"+s+"==>"+small);
+System.out.println("Capatial==>"+c+"==>"+caps);
+System.out.println("Digits==>"+d+"==>"+digit);
+System.out.println("SpecialCharacter==>"+spl+"==>"+splChr);
+
+
+============================================================================================
+
+count all cap,small,digit,splcharacter with predefined method
+***************************************************************
+String input ="Sathish@!@#1243+@gmail.com";
+int s=0,c=0,d=0,spl=0;
+String small="",caps="",digit="",splChr="";
+char[] charArray=input.toCharArray();
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i];
+if(Character.isUpperCase(chr)){
+c++;
+caps=caps+chr;
+
+}else if(Character.isLowerCase(chr)){
+s++;
+small=small+chr;
+}else if(Character.isDigit(chr)){
+d++;
+digit=digit+chr;
+
+}else{
+spl++;
+splChr=splChr+chr;
+
+}
+
+
+}
+System.out.println("Small==>"+s+"==>"+small);
+System.out.println("Capatial==>"+c+"==>"+caps);
+System.out.println("Digits==>"+d+"==>"+digit);
+System.out.println("SpecialCharacter==>"+spl+"==>"+splChr);
+
+=============================================================================================
+
+convert every frist letter in string capatal
+**********************************************
+String input="welcome to world of mine";
+String toChg="";
+String[] stringArray=input.split(" ");
+
+
+for(String array:stringArray){
+char chr=array.charAt(0);
+char a=Character.toUpperCase(chr);
+String b=array.substring(1);
+toChg=toChg+a+b+" ";
+}
+
+System.out.println(toChg);
+
+====================================================================================================
+
+ Increase month by 3
+*********************
+
+String input="2022-12-14";
+
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.MONTH,2);
+System.out.println(sdf.format(instance.getTime()));
+=====================================================================================================
+increase current year by 2
+**************************
+
+String input="2022-02-01";
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+
+Calendar instance=Calendar.getInstance();
+
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.YEAR,2);
+System.out.println(sdf.format(instance.getTime()));
+
+=======================================================================================================
+
+Asscending order in array
+************************
+
+int[] array=new int[5];
+
+array[0]=200;
+array[1]=100;
+array[2]=400;
+array[3]=500;
+array[4]=300;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]>array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+}
+}
+
+for(int i=0;i<array.length;i++){
+System.out.println(array[i]);
+
+}
+
+-----------------------------------------------------------------------------------------------------
+
+print Desending order in array
+*******************************
+
+int[] array=new int[5];
+
+array[0]=300;
+array[1]=100;
+array[2]=200;
+array[3]=400;
+array[4]=500;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]<array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+}
+}
+}
+for(int i=0;i<array.length;i++){
+System.out.println(array[i]);
+
+}
+
+
+***************************************************************************************************
+
+maximum number in array
+**************************
+
+int[] array=new int[5];
+array[0]=500;
+array[1]=2000;
+array[2]=300;
+array[3]=100;
+array[4]=400;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]<array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+
+}
+}
+System.out.println(array[0]);
+====================================================================================================
+
+Minium number in Array
+************	**********
+int[] array=new int[5];
+
+array[0]=200;
+array[1]=500;
+array[2]=100;
+array[3]=400;
+array[4]=330;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]>array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+
+}
+
+
+}
+
+System.out.println(array[0]);
+
+
+
+====================================================================================================
+
+Removing duplicate in array
+***************************
+
+int[] array=new int[8];
+
+array[0]=200;
+array[1]=500;
+array[2]=600;
+array[3]=400;
+array[4]=200;
+array[5]=600;
+array[6]=700;
+array[7]=100;
+
+Set<Integer> set=new LinkedHashSet<>();
+for(int i=0;i<array.length;i++){
+set.add(array[i]);
+}
+
+
+for(Integer newSet:set){
+System.out.println(newSet);
+
+}
+
+====================================================================================================
+
+print the consonent count in  string
+*************************************
+String input="The World iS MINE";
+int count=0;
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i]
+if((chr>='a'&&chr<='z')||(chr>='A'&&chr<='Z')){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u'||
+	chr=='A'||chr=='E'||chr=='I'||chr=='O'||chr=='U')){
+count++;
+}
+
+}
+
+
+
+}
+System.out.println(count);
+
+========================================================================================================
+print The Consonant value in string  
+************************************
+
+String input="The world Is Mine ,More CARS!";
+
+char[] charArray=input.toCharArray();
+Map<Character,Integer> map=new TreeMap<>();
+
+for(int i=0;i<charArray.length;i++){
+char chr=charArray[i];
+if((chr>='a'&&chr<='z')||(chr>='A'&&chr<='Z')){
+if(!(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u'||
+	chr=='A'||chr=='E'||chr=='I'||chr=='O'||chr=='U')){
+if(map.containsKey(chr)){
+Integer intger=map.get(chr);
+map.put(chr,intger+1);
+
+}else{
+map.put(chr,1);
+}
+
+
+}
+
+}
+
+}
+
+Set<Entry<Character,Integer>> entrySet=map.entrySet();
+
+for(Entry<Character,Integer> entry:entrySet){
+System.out.println(entry);
+
+}
+
+===================================================================================================
+count all caps ,small,digit,splcharacter in string without predefined method
+/*******************************************************************************
+
+String input="SathishDell!233#$4<>@GMAIL.com";
+int s=0,c=0,d=0,spl=0;
+String small="",caps="",digit="",splChr="";
+
+for(int i=0;i<input.length();i++){
+char chr=input.charAt(i);
+if(chr>=97&&chr<=122){
+s++;
+small=small+chr;
+
+}else if(chr>=65&&chr<=90){
+c++;
+caps=caps+chr;
+}else if(chr>=48&&chr<=57){
+d++;
+digit=digit+chr;
+}else{
+spl++;
+splChr=splChr+chr;
+
+}
+}
+
+System.out.println("Small==>"+s+"==>"+small);
+System.out.println("Capatial==>"+c+"==>"+caps);
+System.out.println("Digits==>"+d+"==>"+digit);
+System.out.println("SpecialCharacter==>"+spl+"==>"+splChr);
+
+====================================================================================================
+count all caps,small,digit,Spcial character in string with Predefined method
+******************************************************************************
+
+String input="TheSathish!$(*Y$&*^*(@gmaIL.Cpm";
+
+int s=0,c=0,d=0,spl=0;
+String small="",caps="",digit="",splChr="";
+
+for(int i=0;i<input.length();i++){
+char chr=input.charAt(i);
+if(Character.isLowerCase(chr)){
+s++;
+small=small+chr;
+}else if(Character.isUpperCase(chr)){
+c++;
+caps=caps+chr;
+}else if(Character.isDigit(chr)){
+d++;
+digit=digit+chr;
+
+}else{
+spl++;
+splChr=splChr+chr;
+}
+
+
+}
+
+System.out.println("Small==>"+s+"==>"+small);
+System.out.println("Capatial==>"+c+"==>"+caps);
+System.out.println("Digit==>"+d+"==>"+digit);
+System.out.println("SpecialCharcter==>"+spl+"==>"+splChr);
+**************************************************************************************************
+=====covert every Frist letter capital of word in string ===============================================================================================
+
+String input="welcome to eldam benz cars";
+String toChg="";
+
+String[] stringArray=input.split(" ");
+for(String string:stringArray){
+char chr=string.charAt(0);
+char a=Character.toUpperCase(chr);
+String b=string.substring(1);
+toChg=toChg+a+b+" ";
+}
+System.out.println(toChg);
+--------------------------------------------------------------------------------------------------------
+
+Increase current date by 10
+****************************
+
+String input="2020-04-02";
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.DATE,10);
+
+System.out.println(sdf.format(instance.getTime()));
+
+
+=================================================================================================== 
+Increase current Month by 2
+****************************
+String input="2020-04-02";
+
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+
+Calendar instance= Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.MONTH,2);
+System.out.println(sdf.format(instance.getTime()));
+
+==================================================================================================
+Increase current year by 2
+============================
+String input="2022-05-02";
+
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.YEAR,2);
+System.out.println(sdf.format(instance.getTime()));
+
+*9*****************************************************************************
+package com.sample;
+public class Sample{
+public static void main(String []args){
+
+int num=11;
+
+if(num%2==0){
+System.out.println("its even number");
+
+}else{
+System.out.println("its odd number");
+
+
+
+
+
+}
+}
+
+
+----------------------------------------------------------------------------------
+
+
+package com.sample;
+
+public class Sample{
+
+public static void main(String[] args){
+
+int givenNum;
+
+Scanner scanner=new Scanner(System.in);
+givenNum=scanner.nextInt();
+
+	if(givenNum%2==0){
+	System.out.println("Its even");
+
+}else{
+
+System.out.println("Its not even");
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+}
+
+--------------------------------------------------------------------------------------
+
+Check odd or Even
+*****************
+package com.sample;
+
+public class Sample{
+
+public static void main(String [] args){
+int num;
+Scanner scanner=new Scanner(System.in);
+num=scanner.nextInt();
+
+if(num%2==0){
+System.out.println("Its even");
+
+}else{
+System.out.println("Its not even");
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+-------------------------------------------------------------------------------------
+Check odd even number
+**********************
+int givenNum;
+
+Scanner scanner=new Scanner(System.in);
+givenNum=scanner.nextInt();
+
+if(givenNum%2==0){
+System.out.println("its even");
+
+}else {
+
+System.out.println("its not Even");
+}
+
+--------------------------------------------------------------------------------------
+Print odd number 1 to 10
+**************************
+package com.sample;
+
+public class Sample{
+
+	public static void main(String[]args){
+
+
+		for(int i=1;i<=10;i++){
+	if(i%2!=0){
+System.out.println(i);
+
+
+}
+
+}
+
+
+
+}
+
+
+}
+-------------------------------------------------------------------------------------------
+print Even number from 1 to 600
+
+package com.sample;
+
+public class Sample{
+
+public static void main(String[] args){
+
+for(int i=1;i<=600;i++){
+if (i%2==0){
+System.out.println(i);
+
+
+}
+
+
+}
+
+
+
+
+}
+
+
+
+
+}
+***-------------------------------------------------------------------------------------------
+
+Count odd number from 1 to 100
+
+package com.sample;
+
+public class Sample{
+
+public static void main(String [] args){
+int count=0;
+for(int i=0;i<=100;i++){
+if(i%2!=0){
+count++;
+}
+}
+System.out.println(count);
+
+
+}
+}
+
+
+}
+
+-----------------------------------------------------------------------------------------------
+
+Count Even number from 1 to 100
+
+
+int count=0;
+
+for(int i=0;i<=100;i++){
+if(i%2==0){
+
+count++;
+
+
+
+}
+
+}
+System.out.println(count);
+
+----------------------------------------------------------------------------------------------
+
+Check odd or even 
+******************
+
+
+int given;
+
+Scanner scanner=new Scanner(System.in);
+given=scanner.nextInt();
+
+if(given%2==0){
+
+System.out.println("its even");
+}else {
+System.out.println("its not even");
+}
+
+
+print the odd Number from 1 to 100
+************************************
+
+int start;
+int limit;
+
+Scanner scanner=new Scanner(System.in);
+
+start=scanner.nextInt();
+limit=scanner.nextInt();
+
+for(i=start;i<=limit;i++){
+if(i%2!=0){
+System.out.println(i);
+
+}
+
+}
+---------------------------------------------------------------------------------------------
+
+print even number 1 to 600
+***************************
+
+for(int i=1;i<=100;i++){
+
+if(i%2==0){
+System.out.println(i);
+
+
+}
+
+
+}
+
+/*******************************************************************************
+
+Count odd number 1 to 100
+
+
+int start;
+int limit;
+
+int count=0;
+Scanner scanner=new Scanner(System.in);
+
+start=scanner.nextInt();
+limit=scanner.nextInt();
+
+for(int i=start;i<=limit;i++){
+if(i%2!=0){
+
+count++;
+}
+
+
+}
+
+
+System.out.println(count);
+
+
+-------------------------------------------------------------------------------------------
+count even number 1 to 300
+
+
+int count=0;
+
+for(int i=1;i<=300;i++){
+if(i%2==0){
+count++;
+
+}
+
+
+}
+System.out.println(count);
+
+
+------------------------------------------------------------------------------------------------
+print even sum from 1 to 90
+
+
+int start;
+int limit;
+int sum=0;
+
+for(int i=start;i<=limit;i++){
+if(i%2==0){
+sum+=i;
+
+
+}
+
+}
+
+System.out.println(sum);
+
+
+-------------------------------------------------------------------------------------------
+print the odd sum 1 to80
+
+int sum=0;
+
+for(int i=0;i<=80;i++ ){
+if (i%2!=0){
+sum+=i;
+
+}
+
+
+
+}
+System.out.println(sum);
+------------------------------------------------------------------------------------------
+
+reverse number 
+**************
+
+int given=123;
+int reversed=0;
+
+while(given!=0){
+reversed=reversed*10;
+reversed=reversed+given%10;
+given=given/10;
+
+
+}
+
+System.out.println(reversed);
+--------------------------------------------------------------------------------------------
+Reverse number 
+--------------
+
+int given=123;
+int reverse=0;
+
+while(given!=0){
+reverse=reverse*10;
+reverse=reverse+given%10;
+given=given/10;
+
+}
+System.out.println(reverse);
+
+-------------------------------------------------------------------------------------------
+
+paliendrom {similar to reverse ,but even after reverse also the number should be same}
+
+*************************************************************************************  
+
+int given=1235321;
+int temp=given;
+int reverse=0;
+
+
+while(given!=0){
+reverse=reverse*10;
+reverse=reverse+given%10;
+given=given/10;
+
+}
+
+if(reverse.equals(given)){     {.equals only used for string,, so we have to use==> Int}
+
+System.out.println("its palindrom");
+}else{
+System.out.println("its not palindrom");
+
+}
+-------------------------------repeat of (if ==>condition)-----------------------
+}
+if(reverse==temp){
+
+System.out.println("Its is palindrom");
+}else{
+System.out.println(its not palindrom);
+
+}
+
+
+---------------------------------------------------------------------------------------------------print odd sum number 1 to 80
+--------------------------
+int sum=0;
+for(int i=1;i<=80;i++){
+
+if(i%2!=0){
+sum+=i;
+}
+
+}
+System.out.println(sum);
+
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+reverse the number 123
+
+int given =123;
+
+int reverse=0;
+
+while(given!=0){
+
+reverse=reverse*10;
+reverse=reverse+given%10;
+given=given/10;
+
+}
+
+System.out.println(reverse);
+
+==================================================================================================
+
+palindrom if we reverse the number also the number order remai same
+
+int given=1235321;
+int temp=given;
+int reverse=0;
+
+while(given!=0){
+reverse=reverse*10;
+reverse=reverse+given%10;
+given=given/10;
+
+
+}
+
+if(reverse==temp){
+
+System.out.println("its is palindrom");
+}else{
+system.out.println("its not palindrom");
+
+
+}
+
+--------------------------------------------------------------------------------------------------
+
+Count number of digit
+**********************
+
+int given=12321;
+int count=0;
+
+while(given!=0){
+count++;
+given/=10;
+}
+
+System.out.println("Number of Digit in given number===>"+count);
+
+*******************************************************************************
+amstrong number         ===> 13.2.23
+*********************
+
+int num=153;
+int temp=num;
+int arm=0;
+
+while(num!=0){
+int n=num%10;
+arm=arm+(n*n*n);
+num/=10;
+
+}
+if(arm==temp){
+
+System.out.println("its is amstrong");
+
+}else{
+
+System.out.println("Its not amstrong");
+
+
+
+*****************************************************************************************
+
+fibnocce number
+***************
+
+int n1=0,n2=1,n3,count=10;
+
+System.out.println(n1+""+n2);
+
+for(int i=2;i<count;i++){
+n3=n1+n2;
+System.out.print(""+n3);
+n1=n2;
+n2=n3;
+
+}
+
+
+**********************************************************************************************
+Factorial
+----------
+class FactorialExample{  
+ public static void main(String args[]){  
+  int i,fact=1;  
+  int number=5;//It is the number to calculate factorial    
+  for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  System.out.println("Factorial of "+number+" is: "+fact);    
+ }  
+}  
+Another method--2
+=================
+int a=5;
+int fact=1;
+while(a>0){
+fact=fact*a;
+a-=1;
+
+}
+System.out.println(fact);
+
+
+================================================================================================
+Prime number=============>\
+************              /-------------
+from pdf 50 program       \-------------
+<===================>     /
+package com.sample;
+
+public class Sample{
+
+public static void main(String[]args){
+int a=13;
+int count=0;
+for(int i=2;i<=a/2;i++){
+if(a%i==0){
+count++;
+
+
+}
+
+
+}
+if(count==0){
+
+System.out.prinrtln("prime number");
+
+}else{
+
+	System.out.println("Not a prime number");
+}
+
+}
+
+
+
+}
+
+
+=====================================================================================================================
+
+
+
+amstrong number 
+----------------   
+
+int num=153;
+int temp=num;
+int  arm=0;
+
+while(num!=0){
+int n=num%10;
+arm=arm+(n*n*n);
+num/=10;
+}
+ if(arm==temp){
+System.out.println("Amstrong number");
+}
+
+else{
+System.out.println("Not amstrong");}
+************************************************************************************************
+amstrong number 
+====================
+
+int num=153;
+int temp=num;
+int arm=0
+
+while(num!=0){
+int n=num%10;
+arm=arm+(n*n*n);
+num/=10;
+
+
+}
+if(arm==temp){
+System.out.println("Amstrong");
+
+}else{
+System.out.println("Not Amstrong");
+
+}
+
+********************************************************************************************************
+
+amstrong number
+================
+int num=145;
+int temp=num;
+int arm=0;
+
+
+while(num!=0){
+int n=num%10;
+arm=arm+(n*n*n);
+num/=10;
+
+
+}
+if(arm==temp){
+
+System.out.println("Is Amstrong");
+
+}else{
+System.out.println("not amstrong");}
+
+-------------------------------------------------------------------------------------------------------------
+Fibnocce number
+***************
+int n1=0,n2=1,n3,count=10;
+
+System.out.println(n1+" "+n2);
+
+for(inti=;i<count;i++){
+n3=n1+n2;
+System.out.println(""+n3);
+n1=n2;
+n2=n3;
+
+}
+
+------------------------------------------------------
+Fibnocce number
+***************
+
+int n1=0,n2=1,n3,count=10;
+System.out.println(n1+" "+n2);
+for(int i=2;i<count;i++){
+n3=n1+n2;
+System.out.println(" "+n3);
+n1=n2;
+n2=n3;
+
+}
+
+************
+
+
+
+
+
+
+
+

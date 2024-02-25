@@ -1,0 +1,49 @@
+Count All caps,small,digit,specialCharacter without using predefined method
+******************************************************************************
+package com.sample;
+public class Count{
+public static void main(String[] args){
+
+String input="Sathish$%^4565@Gmail.com";
+int s=0,c=0,d=0,spl=0;
+String small="",caps="",digit="",splChr="";
+char[] charArray=input.toCharArray();
+for(int i=0;i<input.length();i++){
+char chr=charArray[i];
+if(chr>=97&&chr<=122){
+s++;
+small=small+chr;
+}else if(chr>=65&&chr<=90){
+c++;
+caps=caps+chr;
+}else if(chr>=48&&chr<=57){
+d++;
+digit=digit+chr;
+}else{
+spl++;
+splChr=splChr+chr;
+
+}
+}
+
+System.out.println("Small==>"+s+"==>"+small);
+System.out.println("Capital==>"+c+"==>"+caps);
+System.out.println("Digit==>"+d+"==>"+digit);
+System.out.println("SpecialCharacter==>"+spl+"==>"+splChr);
+
+
+
+
+
+
+
+
+}
+
+
+}
+
+
+
+
+

@@ -1,0 +1,64 @@
+Find the missing alphabet given String
+=========================================
+
+1.pangram-- if a given statement is having all the English alphabets
+
+input ="a";
+Missing Alphabet: b to z
+
+Steps:
+
+1. Convert the String in uniform case (lower/upper)
+2. remove the space  if there s any 
+3. Store the input in the String Array
+4. create a string array with english alphabet.
+5. create two hashset, one with user input and other with alphabet
+6. compare the two sets  and find the missing characters.
+ 
+----------------------------------------------------------------------------------------------
+
+String input="a  ";
+input=input.toLowerCase();
+input=input.replaceAll(" ","");
+
+String[] userInput=input.split("");
+
+String[] alphabet="abcdefghijklmnopqrstuvwxyz".split("");
+
+HashSet<String> set1=new HashSet<>();
+
+for(String s:userInput){
+set1.add(s);
+}
+
+HashSet<String> set2=new HashSet<>();
+for(String r:alphabet){
+set2.add(r);
+
+}
+
+set2.removeAll(set1);
+
+
+System.out.println(set2);
+
+--------------------------------------or else we can iterate Arrays.asList-------------------------------------
+
+
+String input ="b";
+
+String[] userInput=input.split("");
+String[] alphabet="abcdefghijklmnopqrstuvwxyz".split("");
+
+
+HashSet<String> set=new HashSet<>(Arrays.asList(userInput));
+
+HashSet<String> set2=new HashSet<>(Arrays.asList(alphabet));
+
+
+set2.removeAll(set);
+System.out.println(set2);
+
+
+
+

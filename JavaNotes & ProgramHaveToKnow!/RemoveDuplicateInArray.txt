@@ -1,0 +1,35 @@
+Remove the duplicate in an array
+********************************
+package com.sample;
+
+public class removeTheDuplicate{
+
+public static void main(String[] args){
+
+ int[] array=new int[8];
+array[0]=70;
+array[1]=80;
+array[2]=50;
+array[3]=10;
+array[4]=100;
+array[5]=40;
+array[6]=50;
+array[7]=80;
+
+Set<Integer> set=new LinkedHashSet<>();
+for(int i=0;i<array.length;i++){
+set.add(array[i]);
+
+}
+for(<Integer> newSet:set){
+System.out.println(newSet);
+
+}
+
+
+
+}
+
+} 
+
+

@@ -1,0 +1,56 @@
+Transpose of a matrix can be found by interchanging rows with the column that is, rows of the original matrix will become columns of the new matrix. Similarly, columns in the original matrix will become rows in the new matrix.
+
+
+
+
+program==>
+int arry[][] = { { 1, 2, 3 },
+                 { 4, 5, 6 }, 
+                 { 7, 8, 9 } };
+
+		int row, colom;
+		row = arry.length;
+		colom = arry[0].length;
+
+		for (int i = 0; i < colom; i++) {
+			for (int j = 0; j < row; j++) {
+				System.out.print(arry[j][i] + "");
+			}
+			System.out.println();
+		}
+
+	}
+
+
+
+The code can be explained step by step as follows:
+
+1.The first part is int [][] originalArray={
+{1,2,3},
+{2,3,4},
+{4,5,6}};. This declares and initializes a two-dimensional array named originalArray with three rows and three columns. The elements of the array are integers from 1 to 6.
+
+2.The second part is int row=originalArray.length;. This assigns the value of the length of the originalArray to a variable named row. The length of an array is the number of elements in the array. In this case, the value of row is 3, since there are three rows in the originalArray.
+
+3.The third part is int colom=originalArray[0].length;. This assigns the value of the length of the first row of the originalArray to a variable named colom. The first row of the originalArray is originalArray[0], and its length is the number of elements in that row. In this case, the value of colom is 3, since there are three columns in the originalArray.
+
+4.The fourth part is int [][] transionArray=new int[colom][row];. This declares and creates a new two-dimensional array named transionArray with the same number of elements as the originalArray, but with the rows and columns swapped. The new array has three columns and three rows, since the values of colom and row are 3.
+
+5.The fifth part is for(int i=0;i<colom;i++){. This starts a for loop that iterates over the columns of the transionArray. The loop variable i is initialized to 0, and the loop condition is i < colom. This means that the loop will run as long as i is less than 3, which is the number of columns in the transionArray. The loop increment is i++, which means that i is increased by 1 after each iteration of the loop.
+
+6.The sixth part is for(int j=0;j<row;j++){. This starts another for loop inside the first for loop that iterates over the rows of the transionArray. The loop variable j is initialized to 0, and the loop condition is j < row. This means that the loop will run as long as j is less than 3, which is the number of rows in the transionArray. The loop increment is j++, which means that j is increased by 1 after each iteration of the loop.
+
+7.The seventh part is System.out.print(originalArray[j][i]);. This prints the element of the originalArray at the position [j][i] to the standard output. The position [j][i] is the element in the j-th row and i-th column of the originalArray. This is the same as the element in the i-th row and j-th column of the transionArray, since the rows and columns are swapped in the transpose. For example, when i is 0 and j is 0, the element of the originalArray at [0][0] is 1, and the element of the transionArray at [0][0] is also 1. When i is 0 and j is 1, the element of the originalArray at [1][0] is 2, and the element of the transionArray at [0][1] is also 2. And so on.
+
+8.The eighth part is }. This closes the inner for loop that iterates over the rows of the transionArray.
+
+9.The ninth part is System.out.println();. This prints a new line to the standard output. This is done to separate the rows of the transionArray when printing them.
+
+10.The tenth part is }. This closes the outer for loop that iterates over the columns of the transionArray.
+The output of the program is:
+
+1 2 4 
+2 3 5 
+3 4 6
+
+This is the transpose of the original

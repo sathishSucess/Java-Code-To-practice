@@ -1,0 +1,54 @@
+Notes:
+========
+How to reverse a number?
+
+given number: given=123
+Expected output: 321
+
+
+Formula or logic:
+=================
+loop until num is not equal to 0
+
+		reversed=reversed*10
+		reversed=reversed+given%10
+			given=given/10
+=============================================================================================
+package com.revs;
+
+public class revs{
+
+public static void main(string[]args){
+
+int given=123;
+int reversed=0;
+
+while(given!=0){
+reversed=reversed*10;
+reversed=reversed+given%10;
+given=given/10;
+}
+System.out.println(reversed);
+
+}
+
+}
+==================================================================================================	
+package com.rev
+public class revs{
+public static void main(String[]args){
+
+int given=678;
+
+
+
+
+
+}
+
+
+
+
+
+
+}

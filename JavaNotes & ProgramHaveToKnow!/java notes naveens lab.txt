@@ -1,0 +1,15 @@
+what is java?
+why java is important to learn selenium?
+what is an eclipse?
+my frist program in eclipse?
+data types in java?
+what is a system.out.println and system.out.print?
+String concatenation?
+different comparison operators in java?
+if -else condition?
+loop in java: for and while
+arry concept in java: advantage  and disadvantage of arry
+===============================*************========================================
+1. String is a class, not a data type,
+
+2.primitive data type :int,double,char,boolean

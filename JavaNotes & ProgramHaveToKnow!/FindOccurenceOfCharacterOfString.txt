@@ -1,0 +1,64 @@
+Find the occurrence  Character in the string
+-------------------------------------------
+
+input ="Agniprasanth";
+toFind='a';
+occurence=3;
+
+1.using Iteration
+2.without using iteration
+
+		1.convert the input 	to  unioform formate.
+		2.find the length of the actual input.
+		3.replace  the  toFind char with ethty string.
+		4.find the length after replacing.
+		5.occurence=actuallength - length after replacing;
+
+1 frist Method  using 	iteration
+**********************************
+
+String input="Arulprasasanth";
+char toFind='a';
+int occurence=0;
+
+
+input=input.toLowerCase();
+
+for(int i=0;i<input.length()
+;i++){
+if(input.charAt(i)==toFind){
+occurence++;
+
+}
+
+
+}
+System.out.println(toFind +" Character is found "+occurence+ " number of times");
+
+
+---------------------------------
+Second method without iteration.
+*********************************
+
+String input="DelaPathias";
+char toFind='a';
+
+input=input.toUpperCase();
+String charToFind=Character.toString(toFind).toUpperCase();
+
+int actualLength=input.length();
+System.out.println(actualLength);
+
+input=input.replace(charToFind,""); 
+
+int lengthAfterReplacing =input.length();
+System.out.println(lengthAfterReplacing);
+
+
+
+
+
+
+
+
+	

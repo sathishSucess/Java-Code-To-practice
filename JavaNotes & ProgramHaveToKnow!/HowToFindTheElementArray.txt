@@ -1,0 +1,22 @@
+Find the element in array
+**************************
+
+int array[]={5,56,824,7};
+int numberToFind=56;
+boolean found=false;
+
+for(int number:array){
+
+if(number==numberToFind){
+found=true;
+break;
+
+}
+}
+if(found){
+System.out.println("Number is present");
+}
+else{
+System.out.println("number is not present");
+
+}

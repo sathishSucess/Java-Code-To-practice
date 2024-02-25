@@ -1,0 +1,27 @@
+//Convert all small letter and into capital letter
+
+Example:
+----------
+Input  = WelcomE
+Output = wELCOMe
+
+
+		String given="WelcomE";
+		String temp="";
+		char ch = 0;
+		for(int i=0;i<given.length();i++) {
+			char c=given.charAt(i);
+			if(c>=97&&c<=122) {
+				ch =(char)(c-32);
+			
+			}else if(c>=65&&c<=90) {
+				ch=(char)(c+32);
+			}
+			temp+=ch;
+		}
+		System.out.println(temp);
+		
+		
+		
+		
+		

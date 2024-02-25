@@ -1,0 +1,16 @@
+   Increase Current Year by 2
+**********************************
+
+package com.sample;
+public class IncreaseCurrent{
+public static void main(String[] args){
+
+String input="2022-02-01";
+SimpleDateFormat sdf=new SimpleDateFormat("yyy-MM-dd");
+Calendar instance=Calendar.getInstance();
+instance.setTime(sdf.parse(input));
+instance.add(Calendar.YEAR,2);
+System.out.println(sdf.format(instance.getTime()));
+}
+
+}

@@ -1,0 +1,44 @@
+Find the number of Vowels in ur name
+
+input=agniprasanth;
+output=3;
+
+vowels: {a e i o u}
+
+Steps:
+
+1. Frist let's assume the vowel count is 0
+2. Change the string to a uniform case.
+3. Take the length of the string
+4. iterate the character until the length  of the string
+5. inside the loop, check if the char is any of the vowel character.
+         if so, increment, the count by 1.
+6. repeat this until no characters are left.
+
+
+find the number of vowels in my name
+------------------------------------
+String input="Delhi Ganesh Dhaba";	
+int vowels=0;
+input=input.toUpperCase();
+
+
+for(int i=0;i<input.length();i++){
+if(input.charAt(i)=='A'||input.charAt(i)=='E'||input.charAt(i)=='I'||
+input.charAt(i)=='O'||input.charAt(i)=='U'){
+vowels++;
+
+}
+
+}
+System.out.println("Your name Contains '"+vowels+"' number of vowel(s)");
+
+
+===========================================================================
+
+
+
+
+
+
+

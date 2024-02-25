@@ -1,0 +1,38 @@
+Descending order in the array
+********************************
+package com.sample;
+
+public class DecendingOrderInArray{
+public static void main(String[] args){
+
+int [] array=new int[5];
+array[0]=400;
+array[1]=200;
+array[2]=100;
+array[3]=300;
+array[4]=500;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]<array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+
+}
+
+}
+for(int i=0;i<array.length;i++){
+System.out.println(array[i]);
+
+}
+
+
+
+}
+
+} 
+
+

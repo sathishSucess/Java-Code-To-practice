@@ -1,0 +1,33 @@
+Find the maximum number in array
+********************************
+package com.sample;
+
+public class MaximumNumberInArray{
+public static void main(String[]args){
+
+int[] array=new int[5];
+array[0]=400;
+array[1]=500;
+array[2]=200;
+array[3]=100;
+array[4]=300;
+
+for(int i=0;i<array.length;i++){
+for(int j=i+1;j<array.length;j++){
+if(array[i]<array[j]){
+int temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+
+}
+
+}
+
+}
+System.out.println(array[0]);
+
+
+
+}
+
+}

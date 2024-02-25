@@ -1,0 +1,72 @@
+Upper & lower Case conversion without using built in methods
+===============================================================
+
+convert UPPERCase letters to lower case letters and
+ lower case and to UPPERCASE letters
+
+1.toLowerCase()/ toUpperCase()
+2.custom logic
+
+			1.input="Hello ,iam agni prasath"
+			2.convert it to charArray
+			3.Find the length of the charArray
+			4.iterate using  a loop until the length 
+			5.inside loop,take each character and check if its
+				ASCII value is in between 65(A) and 90(Z).
+
+			6. if it  is add 32 to it .ASCII value -> a-z(97-122)
+	      7. then store it in the char[i]
+			8. after the loop,iterate and  print 	the chars.
+------------------------------------------------------------------------
+UPPERCASE to lowercase
+***********************
+
+String input="THE VALUE IS MORE ON VALUE";
+
+
+char[] charArray=input.toCharArray();
+
+for(int i=0;i<input.length();i++){
+
+if(input.charAt(i)>=65 && input.charAt(i)<=90 ){
+
+charArray[i]=(char)(charArray[i]+32);
+
+
+}
+
+}
+
+for(int i=0;i<charArray.length;i++){
+
+System.out.print(charArray[i]);
+}
+-----------------------------------2nd case------------------------------------
+
+lowercase to UPPERCASE
+***********************
+String input="the benz car is mine";
+
+char[] charAaray=input.toCharArray();
+for(int i=0;i<input.length();i++){
+if(charArray[i]>=97 && charArray[i]<=122){
+charArray[i]=(char)(charArray[i]-32);
+}
+
+
+}
+for(int i=0;i<charArray.length;i++){
+System.out.print(charArray[i]);
+
+}
+
+
+
+
+
+
+
+
+
+
+

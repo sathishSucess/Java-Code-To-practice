@@ -1,0 +1,36 @@
+   Convert frist letter of every word in string 
+ ************************************************
+
+package com.sample;
+public class ConvertLetter{
+public static void main(String[]args){
+
+String input="welcome to world of game";
+String toChg="";
+
+String[] stringArray=input.split(" ");
+
+for(String string:stringArray){
+char chr=string.charAt(0);
+char a=Character.toUpperCase(chr);
+String b=string.substring(1);
+toChg=toChg+a+b+" ";
+
+
+}
+
+System.out.println(toChg);
+
+
+
+
+
+
+
+
+
+
+}
+
+}
+
